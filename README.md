@@ -24,4 +24,9 @@ CultivaFungi está en Shopify y no se intenta incrustar ni capturar la tienda me
 - `width`/`height` en todas las imágenes para reducir CLS, y `preconnect` a los dominios externos restantes.
 - Colores de texto secundario (`.eyebrow`, textos grises, footer) ajustados para cumplir el contraste mínimo WCAG AA (4.5:1) — antes fallaban en varios fondos.
 - `robots.txt` añadido.
-- Desplegado en GitHub + Vercel.
+- Desplegado en GitHub + Vercel, con autodeploy en cada push a `main`.
+
+## V4.2 — Interactividad
+- Los reels de Instagram ahora muestran la miniatura real del vídeo (antes era un degradado de color sin contenido) y reproducen un preview de 6s sin audio al pasar el ratón por encima (`assets/videos/`), volviendo a la miniatura al salir.
+- Scroll-reveal: las tarjetas de proyectos, vídeos y servicios entran con un fade suave al hacer scroll (`IntersectionObserver`), desactivado automáticamente si el sistema tiene `prefers-reduced-motion`.
+- Cursor personalizado ("Ver ↗") que sigue al ratón sobre las tarjetas de proyectos web, solo en dispositivos con ratón (`hover: hover`).
