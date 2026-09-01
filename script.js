@@ -1,10 +1,28 @@
+// Miniatura de YouTube en la mejor calidad disponible: no todos los vídeos tienen
+// maxresdefault/sddefault en alta resolución. Cuando no existe, YouTube no siempre
+// da un error real: a veces responde 200 con un placeholder gris de 120x90, así que
+// además de "error" hay que comprobar el tamaño real de la imagen ya cargada.
+const YT_THUMB_FALLBACKS=["maxresdefault","sddefault","hqdefault"];
+function ytThumbNext(img,youtubeId){
+ const tried=Number(img.dataset.thumbTry||0)+1;
+ if(tried<YT_THUMB_FALLBACKS.length){
+  img.dataset.thumbTry=tried;
+  img.src=`https://i.ytimg.com/vi/${youtubeId}/${YT_THUMB_FALLBACKS[tried]}.jpg`;
+ }
+}
+
 const grid=document.getElementById("videoGrid");
 for(const p of projects){
  const card=document.createElement("a");
  card.className="video-card reveal";
  card.href=`https://www.youtube.com/watch?v=${p.youtubeId}`;
  card.target="_blank";card.rel="noopener";
- card.innerHTML=`<div class="video-thumb"><img src="https://i.ytimg.com/vi/${p.youtubeId}/hqdefault.jpg" alt="${p.title}" width="480" height="360" loading="lazy" decoding="async"><span class="play">▶</span></div><div class="video-info"><h3>${p.title}</h3><span>Ver en YouTube ↗</span></div>`;
+ card.innerHTML=`<div class="video-thumb"><img src="https://i.ytimg.com/vi/${p.youtubeId}/${YT_THUMB_FALLBACKS[0]}.jpg" alt="${p.title}" width="1280" height="720" loading="lazy" decoding="async"><span class="play">▶</span></div><div class="video-info"><h3>${p.title}</h3><span>Ver en YouTube ↗</span></div>`;
+ const thumbImg=card.querySelector("img");
+ thumbImg.addEventListener("error",function(){ytThumbNext(this,p.youtubeId)});
+ thumbImg.addEventListener("load",function(){
+  if(this.naturalWidth<=120&&this.naturalHeight<=90)ytThumbNext(this,p.youtubeId);
+ });
  grid.appendChild(card);
 }
 
