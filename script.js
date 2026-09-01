@@ -55,16 +55,30 @@ if(cursorChip && window.matchMedia("(hover: hover) and (pointer: fine)").matches
  });
 }
 
-// Reels: reproducir el preview de vídeo al pasar el ratón, mostrar la miniatura el resto del tiempo
-document.querySelectorAll(".reel-card").forEach(card=>{
- const video=card.querySelector(".reel-video");
- if(!video)return;
- card.addEventListener("mouseenter",()=>{
-  video.currentTime=0;
-  video.play().then(()=>video.classList.add("is-playing")).catch(()=>{});
+// Reels: en dispositivos con ratón, el preview se reproduce al pasar por encima.
+// En móvil/táctil no hay hover, así que se reproduce solo al deslizar y que la
+// tarjeta quede visible en pantalla (como un feed de reels), y se pausa al salir.
+const hasMouseHover=window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+const reelCards=document.querySelectorAll(".reel-card");
+
+function playReel(video){video.currentTime=0;video.play().then(()=>video.classList.add("is-playing")).catch(()=>{});}
+function pauseReel(video){video.pause();video.classList.remove("is-playing");}
+
+if(hasMouseHover){
+ reelCards.forEach(card=>{
+  const video=card.querySelector(".reel-video");
+  if(!video)return;
+  card.addEventListener("mouseenter",()=>playReel(video));
+  card.addEventListener("mouseleave",()=>pauseReel(video));
  });
- card.addEventListener("mouseleave",()=>{
-  video.pause();
-  video.classList.remove("is-playing");
- });
-});
+}else if("IntersectionObserver" in window){
+ const reelIO=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+   const video=entry.target.querySelector(".reel-video");
+   if(!video)return;
+   if(entry.isIntersecting)playReel(video);
+   else pauseReel(video);
+  });
+ },{threshold:0.6});
+ reelCards.forEach(card=>reelIO.observe(card));
+}
