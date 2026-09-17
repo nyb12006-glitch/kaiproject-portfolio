@@ -128,7 +128,7 @@
       </div>
       <div class="reel-footer">Ver Reel en Instagram ↗</div>
     </a>
-    <div class="reel-card reveal">
+    <div class="reel-card reveal" data-clip="assets/videos/reel-3.mp4" data-poster="assets/images/reel-3.webp" role="button" tabindex="0">
       <div class="instagram-preview" style="background-image:url('assets/images/reel-3.webp')">
         <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-3.webp"><source src="assets/videos/reel-3.mp4" type="video/mp4"></video>
         <div class="ig-top"><b>Vertical</b><span>Reel</span></div>
@@ -137,7 +137,7 @@
       </div>
       <div class="reel-footer">Producción propia</div>
     </div>
-    <div class="reel-card reveal">
+    <div class="reel-card reveal" data-clip="assets/videos/reel-4.mp4" data-poster="assets/images/reel-4.webp" role="button" tabindex="0">
       <div class="instagram-preview" style="background-image:url('assets/images/reel-4.webp')">
         <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-4.webp"><source src="assets/videos/reel-4.mp4" type="video/mp4"></video>
         <div class="ig-top"><b>Vertical</b><span>Reel</span></div>
@@ -169,6 +169,10 @@
 </main>
 <footer><span>KEVIN ALMEIDA</span><span>© 2026</span></footer>
 <div class="cursor-chip" id="cursorChip" aria-hidden="true">Ver ↗</div>
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+  <video id="lightboxVideo" controls playsinline></video>
+</div>
 <script src="projects.js" defer></script><script src="script.js" defer></script>
 </body>
 </html>

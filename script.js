@@ -82,3 +82,33 @@ if(hasMouseHover){
  },{threshold:0.6});
  reelCards.forEach(card=>reelIO.observe(card));
 }
+
+// Clips propios (sin publicar en Instagram): al pulsar la tarjeta se abren
+// en un visor grande en vez de intentar enlazar a un post que no existe.
+const lightbox=document.getElementById("lightbox");
+const lightboxVideo=document.getElementById("lightboxVideo");
+const lightboxClose=document.getElementById("lightboxClose");
+
+function openLightbox(src,poster){
+ lightboxVideo.poster=poster||"";
+ lightboxVideo.src=src;
+ lightbox.classList.add("is-open");
+ lightboxVideo.play().catch(()=>{});
+}
+function closeLightbox(){
+ lightbox.classList.remove("is-open");
+ lightboxVideo.pause();
+ lightboxVideo.removeAttribute("src");
+ lightboxVideo.load();
+}
+if(lightbox){
+ document.querySelectorAll(".reel-card[data-clip]").forEach(card=>{
+  card.addEventListener("click",()=>openLightbox(card.dataset.clip,card.dataset.poster));
+  card.addEventListener("keydown",(e)=>{
+   if(e.key==="Enter"||e.key===" "){e.preventDefault();openLightbox(card.dataset.clip,card.dataset.poster);}
+  });
+ });
+ lightboxClose.addEventListener("click",closeLightbox);
+ lightbox.addEventListener("click",(e)=>{if(e.target===lightbox)closeLightbox();});
+ document.addEventListener("keydown",(e)=>{if(e.key==="Escape")closeLightbox();});
+}
