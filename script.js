@@ -83,8 +83,8 @@ if(hasMouseHover){
  reelCards.forEach(card=>reelIO.observe(card));
 }
 
-// Clips propios (sin publicar en Instagram): al pulsar la tarjeta se abren
-// en un visor grande en vez de intentar enlazar a un post que no existe.
+// Clips propios (sin publicar en Instagram): el bucle de la tarjeta es solo
+// un adelanto; al pulsarla se abre el vídeo completo en un visor grande.
 const lightbox=document.getElementById("lightbox");
 const lightboxVideo=document.getElementById("lightboxVideo");
 const lightboxClose=document.getElementById("lightboxClose");
@@ -102,7 +102,7 @@ function closeLightbox(){
  lightboxVideo.load();
 }
 if(lightbox){
- document.querySelectorAll(".reel-card[data-clip]").forEach(card=>{
+ document.querySelectorAll("[data-clip]").forEach(card=>{
   card.addEventListener("click",()=>openLightbox(card.dataset.clip,card.dataset.poster));
   card.addEventListener("keydown",(e)=>{
    if(e.key==="Enter"||e.key===" "){e.preventDefault();openLightbox(card.dataset.clip,card.dataset.poster);}
