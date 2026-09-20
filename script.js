@@ -17,7 +17,7 @@ for(const p of projects){
  card.className="video-card reveal";
  card.href=`https://www.youtube.com/watch?v=${p.youtubeId}`;
  card.target="_blank";card.rel="noopener";
- card.innerHTML=`<div class="video-thumb"><img src="https://i.ytimg.com/vi/${p.youtubeId}/${YT_THUMB_FALLBACKS[0]}.jpg" alt="${p.title}" width="1280" height="720" loading="lazy" decoding="async"><span class="play">▶</span></div><div class="video-info"><h3>${p.title}</h3><span>Ver en YouTube ↗</span></div>`;
+ card.innerHTML=`<div class="video-thumb"><img src="https://i.ytimg.com/vi/${p.youtubeId}/${YT_THUMB_FALLBACKS[0]}.jpg" alt="${p.title}" width="1280" height="720" loading="lazy" decoding="async"><span class="play">▶</span></div><div class="video-info"><h3>${p.title}</h3><span data-i18n="video.ytCta">Ver en YouTube ↗</span></div>`;
  const thumbImg=card.querySelector("img");
  thumbImg.addEventListener("error",function(){ytThumbNext(this,p.youtubeId)});
  thumbImg.addEventListener("load",function(){

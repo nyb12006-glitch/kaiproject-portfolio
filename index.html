@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kevin Almeida — desarrollo web, producción audiovisual y creación de contenido.">
+<meta name="description" content="Kevin Almeida — desarrollo web, producción audiovisual y creación de contenido." id="metaDescription">
 <title>Kevin Almeida — Portfolio</title>
 <link rel="canonical" href="https://kaiproject-portfolio.vercel.app/">
 <meta name="theme-color" content="#171715">
@@ -15,16 +15,16 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Kevin Almeida">
-<meta property="og:title" content="Kevin Almeida — Portfolio">
-<meta property="og:description" content="Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin.">
+<meta property="og:title" content="Kevin Almeida — Portfolio" id="ogTitle">
+<meta property="og:description" content="Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin." id="ogDescription">
 <meta property="og:image" content="https://kaiproject-portfolio.vercel.app/assets/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://kaiproject-portfolio.vercel.app/">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kevin Almeida — Portfolio">
-<meta name="twitter:description" content="Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin.">
+<meta name="twitter:title" content="Kevin Almeida — Portfolio" id="twitterTitle">
+<meta name="twitter:description" content="Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin." id="twitterDescription">
 <meta name="twitter:image" content="https://kaiproject-portfolio.vercel.app/assets/images/og-image.png">
 
 <script type="application/ld+json">
@@ -53,141 +53,150 @@
 <body>
 <header class="nav">
   <a class="brand" href="#inicio">KEVIN ALMEIDA</a>
-  <nav><a href="#web">Web</a><a href="#video">Vídeo</a><a href="#social">Contenido</a><a href="#canales">Canales</a><a href="#contacto">Contacto</a></nav>
+  <nav>
+    <a href="#web">Web</a><a href="#video" data-i18n="nav.video">Vídeo</a><a href="#social" data-i18n="nav.social">Contenido</a><a href="#canales" data-i18n="nav.canales">Canales</a><a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+    <select id="langSwitch" class="lang-switch" aria-label="Idioma / Language">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="ca">CA</option>
+      <option value="de">DE</option>
+    </select>
+  </nav>
 </header>
 
 <main>
 <section id="inicio" class="hero">
   <div class="hero-main">
-    <p class="eyebrow">KEVIN ALMEIDA · CASTELLÓN</p>
-    <h1>Hola, soy Kevin.<br><em>Creo, desarrollo y edito.</em></h1>
-    <p class="intro">Trabajo en desarrollo web, producción audiovisual y creación de contenido. Me encargo de los proyectos de principio a fin.</p>
-    <a class="button" href="#trabajos">Ver trabajos <span>↓</span></a>
+    <p class="eyebrow" data-i18n="hero.eyebrow">KEVIN ALMEIDA · CASTELLÓN</p>
+    <h1><span data-i18n="hero.h1_line1">Hola, soy Kevin.</span><br><em data-i18n="hero.h1_line2">Creo, desarrollo y edito.</em></h1>
+    <p class="intro" data-i18n="hero.intro">Trabajo en desarrollo web, producción audiovisual y creación de contenido. Me encargo de los proyectos de principio a fin.</p>
+    <a class="button" href="#trabajos"><span data-i18n="hero.button">Ver trabajos</span> <span>↓</span></a>
   </div>
 </section>
 
 <section id="trabajos" class="section first">
-  <div class="section-head"><div><p class="eyebrow">TRABAJOS SELECCIONADOS</p><h2>Proyectos reales y<br>trabajos creativos.</h2></div></div>
+  <div class="section-head"><div><p class="eyebrow" data-i18n="trabajos.eyebrow">TRABAJOS SELECCIONADOS</p><h2><span data-i18n="trabajos.h2_line1">Proyectos reales y</span><br><span data-i18n="trabajos.h2_line2">trabajos creativos.</span></h2></div></div>
 </section>
 
 <section id="web" class="section">
   <div class="section-head">
-    <div><p class="eyebrow">01 · DESARROLLO WEB</p><h2>Web</h2></div>
-    <p class="section-desc">Desarrollo desde cero, optimización y proyectos funcionales.</p>
+    <div><p class="eyebrow" data-i18n="web.eyebrow">01 · DESARROLLO WEB</p><h2>Web</h2></div>
+    <p class="section-desc" data-i18n="web.desc">Desarrollo desde cero, optimización y proyectos funcionales.</p>
   </div>
   <div class="web-grid">
     <a class="web-card reveal" href="https://www.sampayoabogados.com/" target="_blank" rel="noopener">
       <div class="site-image"><img src="https://www.sampayoabogados.com/home/mario-sampayo-abogado-despacho-castellon.webp" alt="Imagen del proyecto Sampayo Abogados" width="1200" height="800" loading="lazy"></div>
-      <div class="card-info"><div><h3>Sampayo Abogados</h3><p>Desarrollo desde cero · SEO / GEO / AEO</p></div><span>Visitar web ↗</span></div>
+      <div class="card-info"><div><h3>Sampayo Abogados</h3><p data-i18n="web.card1.desc">Desarrollo desde cero · SEO / GEO / AEO</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
     </a>
     <a class="web-card reveal" href="https://cultivafungi.com/" target="_blank" rel="noopener">
       <div class="site-image"><img src="assets/images/cultivafungi.webp" alt="Imagen del proyecto CultivaFungi" width="1280" height="720" loading="lazy"></div>
-      <div class="card-info"><div><h3>CultivaFungi</h3><p>Optimización de web y ecommerce</p></div><span>Visitar web ↗</span></div>
+      <div class="card-info"><div><h3>CultivaFungi</h3><p data-i18n="web.card2.desc">Optimización de web y ecommerce</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
     </a>
     <a class="web-card reveal" href="https://experience-barber-shop.vercel.app/" target="_blank" rel="noopener">
       <div class="site-image"><img src="assets/images/experience-barber-shop.webp" alt="Vista previa de Experience Barber Shop" width="1000" height="667" loading="lazy"></div>
-      <div class="card-info"><div><h3>Experience Barber Shop</h3><p>Demo funcional · Desarrollo desde cero</p></div><span>Visitar web ↗</span></div>
+      <div class="card-info"><div><h3>Experience Barber Shop</h3><p data-i18n="web.card34.desc">Demo funcional · Desarrollo desde cero</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
     </a>
     <a class="web-card reveal" href="https://dacapo-web-taupe.vercel.app/" target="_blank" rel="noopener">
       <div class="site-image"><img src="assets/images/dacapo.webp" alt="Vista previa de DACAPO" width="1000" height="667" loading="lazy"></div>
-      <div class="card-info"><div><h3>DACAPO</h3><p>Demo funcional · Desarrollo desde cero</p></div><span>Visitar web ↗</span></div>
+      <div class="card-info"><div><h3>DACAPO</h3><p data-i18n="web.card34.desc">Demo funcional · Desarrollo desde cero</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
     </a>
   </div>
 </section>
 
 <section id="video" class="section dark">
   <div class="section-head">
-    <div><p class="eyebrow">02 · AUDIOVISUAL</p><h2>Videoclips</h2></div>
-    <p class="section-desc">+10 videoclips · Grabación · Edición · Color · Postproducción</p>
+    <div><p class="eyebrow" data-i18n="video.eyebrow">02 · AUDIOVISUAL</p><h2 data-i18n="video.h2">Videoclips</h2></div>
+    <p class="section-desc" data-i18n="video.desc">+10 videoclips · Grabación · Edición · Color · Postproducción</p>
   </div>
   <div id="videoGrid" class="video-grid">
     <div class="video-card reveal" data-clip="assets/videos/retrato-full.mp4" data-poster="assets/images/retrato.webp" role="button" tabindex="0">
       <div class="video-thumb"><img src="assets/images/retrato.webp" alt="Retrato" width="1280" height="720" loading="lazy" decoding="async"><span class="play">▶</span></div>
-      <div class="video-info"><h3>Retrato</h3><span>Ver clip completo ↗</span></div>
+      <div class="video-info"><h3 data-i18n="video.retrato.title">Retrato</h3><span data-i18n="video.retrato.cta">Ver clip completo ↗</span></div>
     </div>
   </div>
 </section>
 
 <section id="social" class="section social">
   <div class="section-head">
-    <div><p class="eyebrow">03 · SOCIAL MEDIA</p><h2>Contenido</h2></div>
-    <p class="section-desc">Grabación, edición y planificación de contenido para Instagram.</p>
+    <div><p class="eyebrow">03 · SOCIAL MEDIA</p><h2 data-i18n="social.h2">Contenido</h2></div>
+    <p class="section-desc" data-i18n="social.desc">Grabación, edición y planificación de contenido para Instagram.</p>
   </div>
-  <div class="result"><strong>+150 seguidores</strong><span>en aprox. 6 semanas</span></div>
+  <div class="result"><strong data-i18n="social.resultStrong">+150 seguidores</strong><span data-i18n="social.resultSpan">en aprox. 6 semanas</span></div>
   <div class="reel-grid">
     <a class="reel-card reveal" href="https://www.instagram.com/reel/Db-2nknNxbb/" target="_blank" rel="noopener">
       <div class="instagram-preview" style="background-image:url('assets/images/reel-1.webp')">
         <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-1.webp"><source src="assets/videos/reel-1.mp4" type="video/mp4"></video>
         <div class="ig-top"><b>Instagram</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small>VER REEL</small></div>
-        <div class="ig-bottom">Grabación · Edición</div>
+        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel.verReel">VER REEL</small></div>
+        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
       </div>
-      <div class="reel-footer">Ver Reel en Instagram ↗</div>
+      <div class="reel-footer" data-i18n="reel.footerIg">Ver Reel en Instagram ↗</div>
     </a>
     <a class="reel-card reveal" href="https://www.instagram.com/reel/DcGkDi8N0nN/" target="_blank" rel="noopener">
       <div class="instagram-preview" style="background-image:url('assets/images/reel-2.webp')">
         <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-2.webp"><source src="assets/videos/reel-2.mp4" type="video/mp4"></video>
         <div class="ig-top"><b>Instagram</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small>VER REEL</small></div>
-        <div class="ig-bottom">Grabación · Edición</div>
+        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel.verReel">VER REEL</small></div>
+        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
       </div>
-      <div class="reel-footer">Ver Reel en Instagram ↗</div>
+      <div class="reel-footer" data-i18n="reel.footerIg">Ver Reel en Instagram ↗</div>
     </a>
     <div class="reel-card reveal" data-clip="assets/videos/reel-3-full.mp4" data-poster="assets/images/reel-3.webp" role="button" tabindex="0">
       <div class="instagram-preview" style="background-image:url('assets/images/reel-3.webp')">
         <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-3.webp"><source src="assets/videos/reel-3.mp4" type="video/mp4"></video>
-        <div class="ig-top"><b>Vertical</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small>VER CLIP</small></div>
-        <div class="ig-bottom">Grabación · Edición</div>
+        <div class="ig-top"><b data-i18n="reel3.labelVertical">Vertical</b><span>Reel</span></div>
+        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel3.verClip">VER CLIP</small></div>
+        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
       </div>
-      <div class="reel-footer">Producción propia</div>
+      <div class="reel-footer" data-i18n="reel3.footer">Producción propia</div>
     </div>
   </div>
 </section>
 
 <section id="canales" class="section dark">
   <div class="section-head">
-    <div><p class="eyebrow">04 · CANALES PROPIOS</p><h2>Canales</h2></div>
-    <p class="section-desc">Cuentas y canales propios, gestionados de principio a fin: guion, edición y publicación.</p>
+    <div><p class="eyebrow" data-i18n="canales.eyebrow">04 · CANALES PROPIOS</p><h2 data-i18n="canales.h2">Canales</h2></div>
+    <p class="section-desc" data-i18n="canales.desc">Canales de prueba, creados para demostrar mis habilidades de edición y gestión de contenido.</p>
   </div>
   <div class="channel-grid">
     <a class="channel-card reveal ig" href="https://www.instagram.com/davidscheuer_reels/" target="_blank" rel="noopener">
-      <div class="channel-top"><b>Instagram</b><span>Cuenta</span></div>
-      <div class="channel-center"><span class="channel-icon">▶</span><small>VER PERFIL</small></div>
-      <div class="channel-info"><h3>@davidscheuer_reels</h3><p>Shorts editados para un podcast</p></div>
+      <div class="channel-top"><b>Instagram</b><span data-i18n="canales.ig.tag">Cuenta de prueba</span></div>
+      <div class="channel-center"><span class="channel-icon">▶</span><small data-i18n="canales.ig.cta">VER PERFIL</small></div>
+      <div class="channel-info"><h3>@davidscheuer_reels</h3><p data-i18n="canales.ig.desc">Shorts para un podcast · Edición con software, sin IA</p></div>
     </a>
     <a class="channel-card reveal yt" href="https://www.youtube.com/@Astrocast_Es" target="_blank" rel="noopener">
-      <div class="channel-top"><b>YouTube</b><span>Canal</span></div>
-      <div class="channel-center"><span class="channel-icon">▶</span><small>VER CANAL</small></div>
-      <div class="channel-info"><h3>Astrocast</h3><p>Canal creado 100% con IA</p></div>
+      <div class="channel-top"><b>YouTube</b><span data-i18n="canales.yt.tag">Canal de prueba</span></div>
+      <div class="channel-center"><span class="channel-icon">▶</span><small data-i18n="canales.yt.cta">VER CANAL</small></div>
+      <div class="channel-info"><h3>Astrocast</h3><p data-i18n="canales.yt.desc">Contenido generado 100% con IA</p></div>
     </a>
   </div>
 </section>
 
 <section class="section services">
-  <div class="section-head"><div><p class="eyebrow">05 · SERVICIOS</p><h2>Qué hago</h2></div></div>
+  <div class="section-head"><div><p class="eyebrow" data-i18n="services.eyebrow">05 · SERVICIOS</p><h2 data-i18n="services.h2">Qué hago</h2></div></div>
   <div class="service-grid">
-    <div class="reveal"><h3>Desarrollo web</h3><p>HTML · CSS · JavaScript · Claude · SEO · GEO · AEO</p></div>
-    <div class="reveal"><h3>Producción audiovisual</h3><p>Grabación · Edición · Color · Postproducción</p></div>
-    <div class="reveal"><h3>Creación de contenido</h3><p>Reels · Miniaturas · Logos · Posts</p></div>
-    <div class="reveal"><h3>Social Media</h3><p>Estrategia · Publicación · Optimización</p></div>
+    <div class="reveal"><h3 data-i18n="services.item1.title">Desarrollo web</h3><p>HTML · CSS · JavaScript · Claude · SEO · GEO · AEO</p></div>
+    <div class="reveal"><h3 data-i18n="services.item2.title">Producción audiovisual</h3><p data-i18n="services.item2.desc">Grabación · Edición · Color · Postproducción</p></div>
+    <div class="reveal"><h3 data-i18n="services.item3.title">Creación de contenido</h3><p data-i18n="services.item3.desc">Reels · Miniaturas · Logos · Posts</p></div>
+    <div class="reveal"><h3>Social Media</h3><p data-i18n="services.item4.desc">Estrategia · Publicación · Optimización</p></div>
   </div>
 </section>
 
 <section id="contacto" class="contact">
-  <p class="eyebrow">06 · CONTACTO</p>
-  <h2>¿Tienes un proyecto?</h2>
-  <p>Hablemos.</p>
+  <p class="eyebrow" data-i18n="contact.eyebrow">06 · CONTACTO</p>
+  <h2 data-i18n="contact.h2">¿Tienes un proyecto?</h2>
+  <p data-i18n="contact.p">Hablemos.</p>
   <a class="email" href="mailto:almeida97cs@gmail.com">almeida97cs@gmail.com ↗</a>
-  <div class="contact-meta">642 439 028 · Castellón de la Plana</div>
+  <div class="contact-meta" data-i18n="contact.meta">642 439 028 · Castellón de la Plana</div>
 </section>
 </main>
 <footer><span>KEVIN ALMEIDA</span><span>© 2026</span></footer>
-<div class="cursor-chip" id="cursorChip" aria-hidden="true">Ver ↗</div>
+<div class="cursor-chip" id="cursorChip" aria-hidden="true" data-i18n="misc.cursorChip">Ver ↗</div>
 <div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar" data-i18n-aria="misc.close">✕</button>
   <video id="lightboxVideo" controls playsinline></video>
 </div>
-<script src="projects.js" defer></script><script src="script.js" defer></script>
+<script src="projects.js" defer></script><script src="script.js" defer></script><script src="i18n.js" defer></script>
 </body>
 </html>
