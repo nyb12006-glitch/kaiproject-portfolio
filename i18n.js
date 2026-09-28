@@ -21,7 +21,7 @@ const translations={
   "services.eyebrow":"05 · SERVICIOS","services.h2":"Qué hago",
   "services.item1.title":"Desarrollo web","services.item2.title":"Producción audiovisual","services.item2.desc":"Grabación · Edición · Color · Postproducción",
   "services.item3.title":"Creación de contenido","services.item3.desc":"Reels · Miniaturas · Logos · Posts","services.item4.desc":"Estrategia · Publicación · Optimización",
-  "contact.eyebrow":"06 · CONTACTO","contact.h2":"¿Tienes un proyecto?","contact.p":"Hablemos.","contact.meta":"642 439 028 · Castellón de la Plana",
+  "contact.eyebrow":"06 · CONTACTO","contact.h2":"¿Tienes un proyecto?","contact.p":"Hablemos.",
   "misc.cursorChip":"Ver ↗","misc.close":"Cerrar",
   "meta.title":"Kevin Almeida — Portfolio","meta.description":"Kevin Almeida — desarrollo web, producción audiovisual y creación de contenido.",
   "meta.ogDescription":"Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin."
@@ -48,7 +48,7 @@ const translations={
   "services.eyebrow":"05 · SERVICES","services.h2":"What I do",
   "services.item1.title":"Web development","services.item2.title":"Video production","services.item2.desc":"Filming · Editing · Color · Post-production",
   "services.item3.title":"Content creation","services.item3.desc":"Reels · Thumbnails · Logos · Posts","services.item4.desc":"Strategy · Publishing · Optimization",
-  "contact.eyebrow":"06 · CONTACT","contact.h2":"Have a project?","contact.p":"Let's talk.","contact.meta":"642 439 028 · Castellón de la Plana",
+  "contact.eyebrow":"06 · CONTACT","contact.h2":"Have a project?","contact.p":"Let's talk.",
   "misc.cursorChip":"View ↗","misc.close":"Close",
   "meta.title":"Kevin Almeida — Portfolio","meta.description":"Kevin Almeida — web development, video production and content creation.",
   "meta.ogDescription":"Web development, video production and content creation. Real projects from start to finish."
@@ -75,7 +75,7 @@ const translations={
   "services.eyebrow":"05 · SERVICES","services.h2":"Ce que je fais",
   "services.item1.title":"Développement web","services.item2.title":"Production audiovisuelle","services.item2.desc":"Tournage · Montage · Étalonnage · Postproduction",
   "services.item3.title":"Création de contenu","services.item3.desc":"Reels · Miniatures · Logos · Posts","services.item4.desc":"Stratégie · Publication · Optimisation",
-  "contact.eyebrow":"06 · CONTACT","contact.h2":"Vous avez un projet ?","contact.p":"Parlons-en.","contact.meta":"642 439 028 · Castellón de la Plana",
+  "contact.eyebrow":"06 · CONTACT","contact.h2":"Vous avez un projet ?","contact.p":"Parlons-en.",
   "misc.cursorChip":"Voir ↗","misc.close":"Fermer",
   "meta.title":"Kevin Almeida — Portfolio","meta.description":"Kevin Almeida — développement web, production audiovisuelle et création de contenu.",
   "meta.ogDescription":"Développement web, production audiovisuelle et création de contenu. Projets réels de A à Z."
@@ -102,7 +102,7 @@ const translations={
   "services.eyebrow":"05 · SERVEIS","services.h2":"Què faig",
   "services.item1.title":"Desenvolupament web","services.item2.title":"Producció audiovisual","services.item2.desc":"Gravació · Edició · Color · Postproducció",
   "services.item3.title":"Creació de contingut","services.item3.desc":"Reels · Miniatures · Logos · Posts","services.item4.desc":"Estratègia · Publicació · Optimització",
-  "contact.eyebrow":"06 · CONTACTE","contact.h2":"Tens un projecte?","contact.p":"Parlem-ne.","contact.meta":"642 439 028 · Castelló de la Plana",
+  "contact.eyebrow":"06 · CONTACTE","contact.h2":"Tens un projecte?","contact.p":"Parlem-ne.",
   "misc.cursorChip":"Veure ↗","misc.close":"Tancar",
   "meta.title":"Kevin Almeida — Portfolio","meta.description":"Kevin Almeida — desenvolupament web, producció audiovisual i creació de contingut.",
   "meta.ogDescription":"Desenvolupament web, producció audiovisual i creació de contingut. Projectes reals de principi a fi."
@@ -129,7 +129,7 @@ const translations={
   "services.eyebrow":"05 · LEISTUNGEN","services.h2":"Was ich mache",
   "services.item1.title":"Webentwicklung","services.item2.title":"Videoproduktion","services.item2.desc":"Dreh · Schnitt · Colorgrading · Postproduktion",
   "services.item3.title":"Content-Erstellung","services.item3.desc":"Reels · Thumbnails · Logos · Posts","services.item4.desc":"Strategie · Veröffentlichung · Optimierung",
-  "contact.eyebrow":"06 · KONTAKT","contact.h2":"Hast du ein Projekt?","contact.p":"Lass uns reden.","contact.meta":"642 439 028 · Castellón de la Plana",
+  "contact.eyebrow":"06 · KONTAKT","contact.h2":"Hast du ein Projekt?","contact.p":"Lass uns reden.",
   "misc.cursorChip":"Ansehen ↗","misc.close":"Schließen",
   "meta.title":"Kevin Almeida — Portfolio","meta.description":"Kevin Almeida — Webentwicklung, Videoproduktion und Content-Erstellung.",
   "meta.ogDescription":"Webentwicklung, Videoproduktion und Content-Erstellung. Echte Projekte von Anfang bis Ende."
