@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kevin Almeida — desarrollo web, producción audiovisual y creación de contenido." id="metaDescription">
-<title>Kevin Almeida — Portfolio</title>
+<title>Kevin Almeida, portfolio</title>
+<meta name="description" content="Kevin Almeida, desarrollo web, producción audiovisual y creación de contenido en Castellón." id="metaDescription">
 <link rel="canonical" href="https://kaiproject-portfolio.vercel.app/">
-<meta name="theme-color" content="#171715">
+<meta name="theme-color" content="#141416">
 
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Kevin Almeida">
-<meta property="og:title" content="Kevin Almeida — Portfolio" id="ogTitle">
+<meta property="og:title" content="Kevin Almeida, portfolio" id="ogTitle">
 <meta property="og:description" content="Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin." id="ogDescription">
 <meta property="og:image" content="https://kaiproject-portfolio.vercel.app/assets/images/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://kaiproject-portfolio.vercel.app/">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kevin Almeida — Portfolio" id="twitterTitle">
+<meta name="twitter:title" content="Kevin Almeida, portfolio" id="twitterTitle">
 <meta name="twitter:description" content="Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin." id="twitterDescription">
 <meta name="twitter:image" content="https://kaiproject-portfolio.vercel.app/assets/images/og-image.png">
 
@@ -32,29 +32,48 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Kevin Almeida",
-  "jobTitle": "Desarrollador web y creador de contenido",
+  "jobTitle": "Desarrollador web y editor de vídeo",
   "url": "https://kaiproject-portfolio.vercel.app/",
   "email": "mailto:almeida97cs@gmail.com",
-  "telephone": "+34642439028",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Castellón de la Plana",
     "addressCountry": "ES"
   },
-  "knowsAbout": ["Desarrollo web", "SEO", "Producción audiovisual", "Social media"]
+  "knowsAbout": ["Desarrollo web", "SEO", "Producción audiovisual", "Edición de vídeo", "Social media"]
 }
 </script>
 
-<link rel="preconnect" href="https://i.ytimg.com">
-<link rel="preconnect" href="https://www.sampayoabogados.com">
-
+<link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
+<script src="intro.js"></script>
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#inicio">KEVIN ALMEIDA</a>
-  <nav>
-    <a href="#web">Web</a><a href="#video" data-i18n="nav.video">Vídeo</a><a href="#social" data-i18n="nav.social">Contenido</a><a href="#canales" data-i18n="nav.canales">Canales</a><a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+<a class="skip" href="#inicio">Saltar al contenido</a>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-head"></div>
+  <p class="intro-name intro-cut1">KEVIN ALMEIDA</p>
+  <p class="intro-name intro-cut2">KEVIN ALMEIDA</p>
+  <p class="intro-name intro-cut3">KEVIN ALMEIDA</p>
+  <p class="intro-tc" id="introTc">00:00:00:00</p>
+  <p class="intro-skip" data-i18n="intro.skip">Pulsa para saltar</p>
+  <div class="intro-half intro-left"></div>
+  <div class="intro-half intro-right"></div>
+</div>
+
+<header class="bar">
+  <a class="brand" href="#inicio"><span class="brand-dot"></span>KEVIN ALMEIDA</a>
+  <nav class="tabs" aria-label="Secciones">
+    <a href="#web" data-i18n="nav.web">Webs</a>
+    <a href="#video" data-i18n="nav.video">Videoclips</a>
+    <a href="#social" data-i18n="nav.social">Contenido</a>
+    <a href="#canales" data-i18n="nav.canales">Canales</a>
+    <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+  </nav>
+  <div class="bar-right">
+    <span class="tc" id="tc" aria-hidden="true">00:00:00:00</span>
     <select id="langSwitch" class="lang-switch" aria-label="Idioma / Language">
       <option value="es">ES</option>
       <option value="en">EN</option>
@@ -62,162 +81,312 @@
       <option value="ca">CA</option>
       <option value="de">DE</option>
     </select>
-  </nav>
+  </div>
+  <div class="bar-progress" id="barProgress"></div>
 </header>
 
 <main>
+
+<!-- ESCENA 0: monitor de programa -->
 <section id="inicio" class="hero">
-  <div class="hero-main">
-    <p class="eyebrow" data-i18n="hero.eyebrow">KEVIN ALMEIDA · CASTELLÓN</p>
-    <h1><span data-i18n="hero.h1_line1">Hola, soy Kevin.</span><br><em data-i18n="hero.h1_line2">Creo, desarrollo y edito.</em></h1>
-    <p class="intro" data-i18n="hero.intro">Trabajo en desarrollo web, producción audiovisual y creación de contenido. Me encargo de los proyectos de principio a fin.</p>
-    <a class="button" href="#trabajos"><span data-i18n="hero.button">Ver trabajos</span> <span>↓</span></a>
-  </div>
-</section>
-
-<section id="trabajos" class="section first">
-  <div class="section-head"><div><p class="eyebrow" data-i18n="trabajos.eyebrow">TRABAJOS SELECCIONADOS</p><h2><span data-i18n="trabajos.h2_line1">Proyectos reales y</span><br><span data-i18n="trabajos.h2_line2">trabajos creativos.</span></h2></div></div>
-</section>
-
-<section id="web" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow" data-i18n="web.eyebrow">01 · DESARROLLO WEB</p><h2>Web</h2></div>
-    <p class="section-desc" data-i18n="web.desc">Desarrollo desde cero, optimización y proyectos funcionales.</p>
-  </div>
-  <div class="web-grid">
-    <a class="web-card reveal" href="https://www.sampayoabogados.com/" target="_blank" rel="noopener">
-      <div class="site-image"><img src="https://www.sampayoabogados.com/home/mario-sampayo-abogado-despacho-castellon.webp" alt="Imagen del proyecto Sampayo Abogados" width="1200" height="800" loading="lazy"></div>
-      <div class="card-info"><div><h3>Sampayo Abogados</h3><p data-i18n="web.card1.desc">Desarrollo desde cero · SEO / GEO / AEO</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
-    </a>
-    <a class="web-card reveal" href="https://cultivafungi.com/" target="_blank" rel="noopener">
-      <div class="site-image"><img src="assets/images/cultivafungi.webp" alt="Imagen del proyecto CultivaFungi" width="1280" height="720" loading="lazy"></div>
-      <div class="card-info"><div><h3>CultivaFungi</h3><p data-i18n="web.card2.desc">Optimización de web y ecommerce</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
-    </a>
-    <a class="web-card reveal" href="https://experience-barber-shop.vercel.app/" target="_blank" rel="noopener">
-      <div class="site-image"><img src="assets/images/experience-barber-shop.webp" alt="Vista previa de Experience Barber Shop" width="1000" height="667" loading="lazy"></div>
-      <div class="card-info"><div><h3>Experience Barber Shop</h3><p data-i18n="web.card34.desc">Demo funcional · Desarrollo desde cero</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
-    </a>
-    <a class="web-card reveal" href="https://dacapo-web-taupe.vercel.app/" target="_blank" rel="noopener">
-      <div class="site-image"><img src="assets/images/dacapo.webp" alt="Vista previa de DACAPO" width="1000" height="667" loading="lazy"></div>
-      <div class="card-info"><div><h3>DACAPO</h3><p data-i18n="web.card34.desc">Demo funcional · Desarrollo desde cero</p></div><span data-i18n="web.cta">Visitar web ↗</span></div>
-    </a>
-  </div>
-</section>
-
-<section id="video" class="section dark">
-  <div class="section-head">
-    <div><p class="eyebrow" data-i18n="video.eyebrow">02 · AUDIOVISUAL</p><h2 data-i18n="video.h2">Videoclips</h2></div>
-    <p class="section-desc" data-i18n="video.desc">+10 videoclips · Grabación · Edición · Color · Postproducción</p>
-  </div>
-  <div id="videoGrid" class="video-grid">
-    <div class="video-card reveal" data-clip="assets/videos/retrato-full.mp4" data-poster="assets/images/retrato.webp" role="button" tabindex="0">
-      <div class="video-thumb"><img src="assets/images/retrato.webp" alt="Retrato" width="1280" height="720" loading="lazy" decoding="async"><span class="play">▶</span></div>
-      <div class="video-info"><h3 data-i18n="video.retrato.title">Retrato</h3><span data-i18n="video.retrato.cta">Ver clip completo ↗</span></div>
+  <div class="hero-copy">
+    <p class="label" data-i18n="hero.eyebrow">Kevin Almeida, Castellón</p>
+    <h1>
+      <span class="h1-small" data-i18n="hero.h1_line1">Hola, soy Kevin.</span>
+      <span class="h1-big render" data-i18n="hero.h1_line2">Creo, desarrollo y edito.</span>
+    </h1>
+    <p class="hero-intro" data-i18n="hero.intro">Hago webs para negocios y vídeo para artistas y marcas. Me encargo de cada proyecto de principio a fin.</p>
+    <div class="hero-actions">
+      <a class="btn btn-play" href="#web" data-cut="cursor.play"><span class="btn-ico" aria-hidden="true">▶</span><span data-i18n="hero.play">Reproducir</span></a>
+      <a class="btn btn-ghost" href="#contacto" data-i18n="hero.write">Escríbeme</a>
     </div>
-    <div class="video-card reveal" data-clip="assets/videos/concierto-full.mp4" data-poster="assets/images/concierto.webp" role="button" tabindex="0">
-      <div class="video-thumb"><img src="assets/images/concierto.webp" alt="Concierto" width="960" height="540" loading="lazy" decoding="async"><span class="play">▶</span></div>
-      <div class="video-info"><h3 data-i18n="video.concierto.title">Recap del concierto</h3><span data-i18n="video.retrato.cta">Ver clip completo ↗</span></div>
+
+    <div class="bin" aria-label="Proyecto">
+      <p class="panel-title"><span data-i18n="bin.title">Proyecto</span><span class="mono">portfolio_2026.prproj</span></p>
+      <ul>
+        <li><a href="#web"><i class="chip c-web"></i><span data-i18n="bin.webs">Webs</span><b>4</b></a></li>
+        <li><a href="#video"><i class="chip c-vid"></i><span data-i18n="bin.video">Videoclips</span><b>6</b></a></li>
+        <li><a href="#social"><i class="chip c-reel"></i><span data-i18n="bin.reels">Reels</span><b>5</b></a></li>
+        <li><a href="#canales"><i class="chip c-aud"></i><span data-i18n="bin.canales">Canales</span><b>2</b></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero-monitor">
+    <div class="monitor">
+      <div class="monitor-top"><span><span data-i18n="monitor.program">Programa</span>: montaje_portfolio</span><span class="mono">1920 × 1080</span></div>
+      <div class="monitor-screen">
+        <video id="heroVideo" class="monitor-video" muted loop playsinline autoplay preload="auto" poster="assets/images/montaje-hero.webp">
+          <source src="assets/videos/montaje-hero.mp4" type="video/mp4">
+        </video>
+        <div class="safe" aria-hidden="true"></div>
+      </div>
+      <div class="monitor-bottom">
+        <span class="mono" id="heroTc">00:00:00:00</span>
+        <button class="transport" id="heroToggle" type="button" aria-label="Pausar" data-i18n-aria="monitor.pause">❚❚</button>
+        <span class="mono dim">00:00:10:00</span>
+      </div>
+      <div class="seq" id="heroSeq" aria-hidden="true">
+        <div class="seq-track">
+          <span class="seq-clip a" data-i18n="seq.retrato">Retrato</span><span class="seq-clip b" data-i18n="seq.concierto">Concierto</span>
+          <span class="seq-clip a" data-i18n="seq.retrato">Retrato</span><span class="seq-clip b" data-i18n="seq.concierto">Concierto</span>
+          <span class="seq-clip a" data-i18n="seq.retrato">Retrato</span><span class="seq-clip b" data-i18n="seq.concierto">Concierto</span>
+          <span class="seq-clip a wide" data-i18n="seq.retrato">Retrato</span><span class="seq-clip b" data-i18n="seq.concierto">Concierto</span>
+        </div>
+        <div class="seq-head" id="heroHead"></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="social" class="section social">
-  <div class="section-head">
-    <div><p class="eyebrow">03 · SOCIAL MEDIA</p><h2 data-i18n="social.h2">Contenido</h2></div>
-    <p class="section-desc" data-i18n="social.desc">Grabación, edición y planificación de contenido para Instagram.</p>
-  </div>
-  <div class="result"><strong data-i18n="social.resultStrong">+300 seguidores</strong><span data-i18n="social.resultSpan">en aprox. 6 semanas</span></div>
-  <div class="reel-grid">
-    <a class="reel-card reveal" href="https://www.instagram.com/p/Ddy8zqKtnGw/" target="_blank" rel="noopener">
-      <div class="instagram-preview" style="background-image:url('assets/images/reel-4.webp')">
-        <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-4.webp"><source src="assets/videos/reel-4.mp4" type="video/mp4"></video>
-        <div class="ig-top"><b>Instagram</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel.verReel">VER REEL</small></div>
-        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
+<!-- V1: webs, secuencia que se reproduce con el scroll -->
+<section id="web" class="scrub" data-track="web">
+  <div class="scrub-sticky">
+    <div class="scrub-info">
+      <p class="label"><span class="track-badge c-web">V1</span><span data-i18n="web.label">Pista de vídeo 1</span></p>
+      <h2 data-i18n="web.h2">Webs</h2>
+      <p class="desc" data-i18n="web.desc">Desarrollo desde cero, optimización y proyectos que funcionan.</p>
+      <div class="clip-meta" id="webMeta" aria-live="polite">
+        <p class="mono dim"><span data-i18n="web.clip">Clip</span> <span id="webIdx">1</span>/4</p>
+        <h3 id="webName">Sampayo Abogados</h3>
+        <p id="webDesc" data-i18n="web.sampayo.desc">Desarrollo desde cero con SEO, GEO y AEO</p>
+        <a id="webLink" class="btn btn-ghost" href="https://www.sampayoabogados.com/" target="_blank" rel="noopener" data-cut="cursor.web"><span data-i18n="web.cta">Visitar web ↗</span></a>
       </div>
-      <div class="reel-footer" data-i18n="reel.footerIg">Ver Reel en Instagram ↗</div>
-    </a>
-    <a class="reel-card reveal" href="https://www.instagram.com/reel/Db-2nknNxbb/" target="_blank" rel="noopener">
-      <div class="instagram-preview" style="background-image:url('assets/images/reel-1.webp')">
-        <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-1.webp"><source src="assets/videos/reel-1.mp4" type="video/mp4"></video>
-        <div class="ig-top"><b>Instagram</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel.verReel">VER REEL</small></div>
-        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
-      </div>
-      <div class="reel-footer" data-i18n="reel.footerIg">Ver Reel en Instagram ↗</div>
-    </a>
-    <a class="reel-card reveal" href="https://www.instagram.com/reel/DcGkDi8N0nN/" target="_blank" rel="noopener">
-      <div class="instagram-preview" style="background-image:url('assets/images/reel-2.webp')">
-        <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-2.webp"><source src="assets/videos/reel-2.mp4" type="video/mp4"></video>
-        <div class="ig-top"><b>Instagram</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel.verReel">VER REEL</small></div>
-        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
-      </div>
-      <div class="reel-footer" data-i18n="reel.footerIg">Ver Reel en Instagram ↗</div>
-    </a>
-    <div class="reel-card reveal" data-clip="assets/videos/reel-3-full.mp4" data-poster="assets/images/reel-3.webp" role="button" tabindex="0">
-      <div class="instagram-preview" style="background-image:url('assets/images/reel-3.webp')">
-        <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-3.webp"><source src="assets/videos/reel-3.mp4" type="video/mp4"></video>
-        <div class="ig-top"><b data-i18n="reel3.labelVertical">Vertical</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel3.verClip">VER CLIP</small></div>
-        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
-      </div>
-      <div class="reel-footer" data-i18n="reel3.footer">Producción propia</div>
+      <p class="hint mono" data-i18n="web.hint">Baja para reproducir la secuencia</p>
     </div>
-    <a class="reel-card reveal" href="https://www.instagram.com/p/Dd1n2vnoXIe/" target="_blank" rel="noopener">
-      <div class="instagram-preview" style="background-image:url('assets/images/reel-5.webp')">
-        <video class="reel-video" muted loop playsinline preload="none" poster="assets/images/reel-5.webp"><source src="assets/videos/reel-5.mp4" type="video/mp4"></video>
-        <div class="ig-top"><b>Instagram</b><span>Reel</span></div>
-        <div class="ig-center"><span class="ig-icon">▶</span><small data-i18n="reel.verReel">VER REEL</small></div>
-        <div class="ig-bottom" data-i18n="reel.bottom">Grabación · Edición</div>
+
+    <div class="monitor web-monitor">
+      <div class="monitor-top"><span data-i18n="monitor.program">Programa</span><span class="mono" id="webUrl">sampayoabogados.com</span></div>
+      <div class="monitor-screen web-screen" id="webScreen">
+        <img class="web-shot is-on" src="assets/images/web-sampayo.webp" alt="Página de Sampayo Abogados" width="960" height="2752" decoding="async">
+        <img class="web-shot" src="assets/images/web-cultivafungi.webp" alt="Página de CultivaFungi" width="960" height="2400" loading="lazy" decoding="async">
+        <img class="web-shot" src="assets/images/web-experience.webp" alt="Página de Experience Barber Shop" width="960" height="2400" loading="lazy" decoding="async">
+        <img class="web-shot" src="assets/images/web-dacapo.webp" alt="Página de DACAPO" width="960" height="1966" loading="lazy" decoding="async">
       </div>
-      <div class="reel-footer" data-i18n="reel.footerIg">Ver Reel en Instagram ↗</div>
-    </a>
+    </div>
+
+    <div class="track web-track" id="webTrack">
+      <div class="track-head"><span>V1</span></div>
+      <div class="track-lane">
+        <a class="clip c-web is-on" href="https://www.sampayoabogados.com/" target="_blank" rel="noopener" data-cut="cursor.web" data-name="Sampayo Abogados" data-url="sampayoabogados.com" data-desc="web.sampayo.desc">
+          <span class="clip-film film-sampayo" aria-hidden="true"></span><span class="clip-name">Sampayo Abogados</span>
+        </a>
+        <a class="clip c-web" href="https://cultivafungi.com/" target="_blank" rel="noopener" data-cut="cursor.web" data-name="CultivaFungi" data-url="cultivafungi.com" data-desc="web.cultiva.desc">
+          <span class="clip-film film-cultivafungi" aria-hidden="true"></span><span class="clip-name">CultivaFungi</span>
+        </a>
+        <a class="clip c-web" href="https://experience-barber-shop.vercel.app/" target="_blank" rel="noopener" data-cut="cursor.web" data-name="Experience Barber Shop" data-url="experience-barber-shop.vercel.app" data-desc="web.demo.desc">
+          <span class="clip-film film-experience" aria-hidden="true"></span><span class="clip-name">Experience Barber Shop</span>
+        </a>
+        <a class="clip c-web" href="https://dacapo-web-taupe.vercel.app/" target="_blank" rel="noopener" data-cut="cursor.web" data-name="DACAPO" data-url="dacapo-web-taupe.vercel.app" data-desc="web.demo.desc">
+          <span class="clip-film film-dacapo" aria-hidden="true"></span><span class="clip-name">DACAPO</span>
+        </a>
+        <div class="lane-head" id="webHead" aria-hidden="true"></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="canales" class="section dark">
-  <div class="section-head">
-    <div><p class="eyebrow" data-i18n="canales.eyebrow">04 · CANALES PROPIOS</p><h2 data-i18n="canales.h2">Canales</h2></div>
-    <p class="section-desc" data-i18n="canales.desc">Canales de prueba, creados para demostrar mis habilidades de edición y gestión de contenido.</p>
+<!-- V2: videoclips en el monitor de origen -->
+<section id="video" class="block" data-track="vid">
+  <div class="block-head">
+    <div>
+      <p class="label"><span class="track-badge c-vid">V2</span><span data-i18n="video.label">Pista de vídeo 2</span></p>
+      <h2 data-i18n="video.h2">Videoclips</h2>
+    </div>
+    <p class="desc" data-i18n="video.desc">Más de 10 videoclips. Grabación, edición, color y postproducción.</p>
   </div>
-  <div class="channel-grid">
-    <a class="channel-card reveal ig" href="https://www.instagram.com/davidscheuer_reels/" target="_blank" rel="noopener">
-      <div class="channel-top"><b>Instagram</b><span data-i18n="canales.ig.tag">Cuenta de prueba</span></div>
-      <div class="channel-center"><span class="channel-icon">▶</span><small data-i18n="canales.ig.cta">VER PERFIL</small></div>
-      <div class="channel-info"><h3>@davidscheuer_reels</h3><p data-i18n="canales.ig.desc">Shorts para un podcast · Edición con software, sin IA</p></div>
-    </a>
-    <a class="channel-card reveal yt" href="https://www.youtube.com/@Astrocast_Es" target="_blank" rel="noopener">
-      <div class="channel-top"><b>YouTube</b><span data-i18n="canales.yt.tag">Canal de prueba</span></div>
-      <div class="channel-center"><span class="channel-icon">▶</span><small data-i18n="canales.yt.cta">VER CANAL</small></div>
-      <div class="channel-info"><h3>Astrocast</h3><p data-i18n="canales.yt.desc">Contenido generado 100% con IA</p></div>
-    </a>
+
+  <div class="src-wrap">
+  <div class="monitor source">
+    <div class="monitor-top"><span><span data-i18n="video.source">Origen</span>: <span id="srcName">Retrato</span></span><span class="mono" id="srcKind" data-i18n="video.local">Producción propia</span></div>
+    <div class="monitor-screen source-screen" id="srcScreen">
+      <img id="srcPoster" class="source-poster" src="assets/images/retrato.webp" alt="" width="1280" height="720" decoding="async">
+      <video id="srcVideo" class="source-video" controls playsinline preload="none"></video>
+      <button class="source-play" id="srcPlay" type="button" data-cut="cursor.clip"><span class="btn-ico" aria-hidden="true">▶</span><span data-i18n="video.play">Reproducir</span></button>
+      <a class="source-yt btn" id="srcYt" href="#" target="_blank" rel="noopener" data-cut="cursor.yt" hidden><span data-i18n="video.yt">Ver en YouTube ↗</span></a>
+    </div>
+  </div>
+
+  <div class="strip" id="srcStrip" role="list">
+    <button class="strip-clip is-on" type="button" role="listitem" data-cut="cursor.clip" data-kind="local" data-src="assets/videos/retrato-full.mp4" data-poster="assets/images/retrato.webp" data-title-key="video.retrato.title">
+      <img src="assets/images/retrato.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="strip-name" data-i18n="video.retrato.title">Retrato</span><span class="strip-sub mono" data-i18n="video.local">Producción propia</span>
+    </button>
+    <button class="strip-clip" type="button" role="listitem" data-cut="cursor.clip" data-kind="local" data-src="assets/videos/concierto-full.mp4" data-poster="assets/images/concierto.webp" data-title-key="video.concierto.title">
+      <img src="assets/images/concierto.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="strip-name" data-i18n="video.concierto.title">Recap del concierto</span><span class="strip-sub mono" data-i18n="video.local">Producción propia</span>
+    </button>
+    <button class="strip-clip" type="button" role="listitem" data-cut="cursor.clip" data-kind="yt" data-yt="gA-hgcPCQ-o" data-poster="assets/images/yt-gA-hgcPCQ-o.webp" data-title="Bala">
+      <img src="assets/images/yt-gA-hgcPCQ-o.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="strip-name">Bala</span><span class="strip-sub mono">Flux Nobody</span>
+    </button>
+    <button class="strip-clip" type="button" role="listitem" data-cut="cursor.clip" data-kind="yt" data-yt="nVmcIX1yJ10" data-poster="assets/images/yt-nVmcIX1yJ10.webp" data-title="Hola bebe">
+      <img src="assets/images/yt-nVmcIX1yJ10.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="strip-name">Hola bebe</span><span class="strip-sub mono">Flux Nobody</span>
+    </button>
+    <button class="strip-clip" type="button" role="listitem" data-cut="cursor.clip" data-kind="yt" data-yt="DRUbploxU4w" data-poster="assets/images/yt-DRUbploxU4w.webp" data-title="Vine a quedarme">
+      <img src="assets/images/yt-DRUbploxU4w.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="strip-name">Vine a quedarme</span><span class="strip-sub mono">Victor HA, Ess</span>
+    </button>
+    <button class="strip-clip" type="button" role="listitem" data-cut="cursor.clip" data-kind="yt" data-yt="0jR-6U8VLjE" data-poster="assets/images/yt-0jR-6U8VLjE.webp" data-title="Maldita Endemonia">
+      <img src="assets/images/yt-0jR-6U8VLjE.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="strip-name">Maldita Endemonia</span><span class="strip-sub mono">Jumi, PeskyShappire</span>
+    </button>
+  </div>
   </div>
 </section>
 
-<section class="section services">
-  <div class="section-head"><div><p class="eyebrow" data-i18n="services.eyebrow">05 · SERVICIOS</p><h2 data-i18n="services.h2">Qué hago</h2></div></div>
-  <div class="service-grid">
-    <div class="reveal"><h3 data-i18n="services.item1.title">Desarrollo web</h3><p>HTML · CSS · JavaScript · Claude · SEO · GEO · AEO</p></div>
-    <div class="reveal"><h3 data-i18n="services.item2.title">Producción audiovisual</h3><p data-i18n="services.item2.desc">Grabación · Edición · Color · Postproducción</p></div>
-    <div class="reveal"><h3 data-i18n="services.item3.title">Creación de contenido</h3><p data-i18n="services.item3.desc">Reels · Miniaturas · Logos · Posts</p></div>
-    <div class="reveal"><h3>Social Media</h3><p data-i18n="services.item4.desc">Estrategia · Publicación · Optimización</p></div>
+<!-- V3: reels en multicámara -->
+<section id="social" class="block block-alt" data-track="reel">
+  <div class="block-head">
+    <div>
+      <p class="label"><span class="track-badge c-reel">V3</span><span data-i18n="social.label">Pista de vídeo 3</span></p>
+      <h2 data-i18n="social.h2">Contenido</h2>
+    </div>
+    <div>
+      <p class="desc" data-i18n="social.desc">Grabación, edición y planificación de contenido para Instagram.</p>
+      <p class="marker"><span class="marker-flag" aria-hidden="true"></span><span data-i18n="social.marker">+300 seguidores en unas 6 semanas</span></p>
+    </div>
+  </div>
+
+  <div class="multicam" id="multicam">
+    <div class="mc-main">
+      <div class="monitor-top"><span data-i18n="social.multicam">Multicámara</span><span class="mono"><span data-i18n="social.cam">Cámara</span> <span id="mcNum">1</span></span></div>
+      <div class="mc-screen" id="mcScreen">
+        <video id="mcVideo" muted loop playsinline preload="none" poster="assets/images/reel-4.webp"><source src="assets/videos/reel-4.mp4" type="video/mp4"></video>
+        <span class="mc-rec mono" aria-hidden="true">● PGM</span>
+      </div>
+      <div class="mc-foot">
+        <a id="mcLink" class="btn btn-ghost" href="https://www.instagram.com/p/Ddy8zqKtnGw/" target="_blank" rel="noopener" data-cut="cursor.ig"><span data-i18n="social.ig">Ver reel en Instagram ↗</span></a>
+        <button id="mcFull" class="btn btn-ghost" type="button" hidden data-cut="cursor.clip"><span data-i18n="social.full">Ver clip completo</span></button>
+      </div>
+    </div>
+    <div class="mc-angles" id="mcAngles" role="list">
+      <button class="angle is-on" type="button" role="listitem" data-cut="cursor.cam" data-src="assets/videos/reel-4.mp4" data-poster="assets/images/reel-4.webp" data-href="https://www.instagram.com/p/Ddy8zqKtnGw/">
+        <video muted loop playsinline preload="none" poster="assets/images/reel-4.webp"><source src="assets/videos/reel-4.mp4" type="video/mp4"></video><span class="angle-n mono">1</span>
+      </button>
+      <button class="angle" type="button" role="listitem" data-cut="cursor.cam" data-src="assets/videos/reel-1.mp4" data-poster="assets/images/reel-1.webp" data-href="https://www.instagram.com/reel/Db-2nknNxbb/">
+        <video muted loop playsinline preload="none" poster="assets/images/reel-1.webp"><source src="assets/videos/reel-1.mp4" type="video/mp4"></video><span class="angle-n mono">2</span>
+      </button>
+      <button class="angle" type="button" role="listitem" data-cut="cursor.cam" data-src="assets/videos/reel-2.mp4" data-poster="assets/images/reel-2.webp" data-href="https://www.instagram.com/reel/DcGkDi8N0nN/">
+        <video muted loop playsinline preload="none" poster="assets/images/reel-2.webp"><source src="assets/videos/reel-2.mp4" type="video/mp4"></video><span class="angle-n mono">3</span>
+      </button>
+      <button class="angle" type="button" role="listitem" data-cut="cursor.cam" data-src="assets/videos/reel-3.mp4" data-poster="assets/images/reel-3.webp" data-full="assets/videos/reel-3-full.mp4">
+        <video muted loop playsinline preload="none" poster="assets/images/reel-3.webp"><source src="assets/videos/reel-3.mp4" type="video/mp4"></video><span class="angle-n mono">4</span>
+      </button>
+      <button class="angle" type="button" role="listitem" data-cut="cursor.cam" data-src="assets/videos/reel-5.mp4" data-poster="assets/images/reel-5.webp" data-href="https://www.instagram.com/p/Dd1n2vnoXIe/">
+        <video muted loop playsinline preload="none" poster="assets/images/reel-5.webp"><source src="assets/videos/reel-5.mp4" type="video/mp4"></video><span class="angle-n mono">5</span>
+      </button>
+    </div>
   </div>
 </section>
 
-<section id="contacto" class="contact">
-  <p class="eyebrow" data-i18n="contact.eyebrow">06 · CONTACTO</p>
-  <h2 data-i18n="contact.h2">¿Tienes un proyecto?</h2>
-  <p data-i18n="contact.p">Hablemos.</p>
-  <a class="email" href="mailto:almeida97cs@gmail.com">almeida97cs@gmail.com ↗</a>
+<!-- A1 y A2: canales como pistas de audio -->
+<section id="canales" class="block" data-track="aud">
+  <div class="block-head">
+    <div>
+      <p class="label"><span class="track-badge c-aud">A1</span><span data-i18n="canales.label">Pistas de audio</span></p>
+      <h2 data-i18n="canales.h2">Canales</h2>
+    </div>
+    <p class="desc" data-i18n="canales.desc">Canales de prueba, creados para demostrar edición y gestión de contenido.</p>
+  </div>
+
+  <div class="audio">
+    <div class="atrack">
+      <div class="atrack-head"><span class="mono">A1</span><span class="ms" aria-hidden="true"><i>M</i><i>S</i></span><span class="vu" aria-hidden="true"><i></i></span></div>
+      <a class="aclip" href="https://www.instagram.com/davidscheuer_reels/" target="_blank" rel="noopener" data-cut="cursor.canal">
+        <span class="wave" aria-hidden="true"></span>
+        <span class="aclip-info">
+          <span class="aclip-top mono"><span>Instagram</span><span data-i18n="canales.ig.tag">Cuenta de prueba</span></span>
+          <span class="aclip-name">@davidscheuer_reels</span>
+          <span class="aclip-desc" data-i18n="canales.ig.desc">Shorts para un podcast, editados con software y sin IA</span>
+        </span>
+        <span class="aclip-cta" data-i18n="canales.ig.cta">Ver perfil ↗</span>
+      </a>
+    </div>
+    <div class="atrack">
+      <div class="atrack-head"><span class="mono">A2</span><span class="ms" aria-hidden="true"><i>M</i><i>S</i></span><span class="vu" aria-hidden="true"><i></i></span></div>
+      <a class="aclip" href="https://www.youtube.com/@Astrocast_Es" target="_blank" rel="noopener" data-cut="cursor.canal">
+        <span class="wave" aria-hidden="true"></span>
+        <span class="aclip-info">
+          <span class="aclip-top mono"><span>YouTube</span><span data-i18n="canales.yt.tag">Canal de prueba</span></span>
+          <span class="aclip-name">Astrocast</span>
+          <span class="aclip-desc" data-i18n="canales.yt.desc">Contenido generado 100% con IA</span>
+        </span>
+        <span class="aclip-cta" data-i18n="canales.yt.cta">Ver canal ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- fx: servicios como panel de efectos -->
+<section id="servicios" class="block block-alt" data-track="fx">
+  <div class="block-head">
+    <div>
+      <p class="label"><span class="track-badge c-fx">fx</span><span data-i18n="services.label">Efectos aplicados</span></p>
+      <h2 data-i18n="services.h2">Qué hago</h2>
+    </div>
+  </div>
+
+  <div class="fx">
+    <div class="fx-tree">
+      <p class="panel-title"><span data-i18n="services.panel">Efectos</span></p>
+      <div class="fx-folders" role="tablist" aria-label="Servicios">
+        <button class="fx-folder" type="button" role="tab" aria-selected="true" data-svc="1"><span class="folder-ico" aria-hidden="true"></span><span data-i18n="svc1.title">Desarrollo web</span></button>
+        <button class="fx-folder" type="button" role="tab" aria-selected="false" data-svc="2" tabindex="-1"><span class="folder-ico" aria-hidden="true"></span><span data-i18n="svc2.title">Producción audiovisual</span></button>
+        <button class="fx-folder" type="button" role="tab" aria-selected="false" data-svc="3" tabindex="-1"><span class="folder-ico" aria-hidden="true"></span><span data-i18n="svc3.title">Creación de contenido</span></button>
+        <button class="fx-folder" type="button" role="tab" aria-selected="false" data-svc="4" tabindex="-1"><span class="folder-ico" aria-hidden="true"></span><span data-i18n="svc4.title">Social media</span></button>
+      </div>
+    </div>
+    <div class="fx-controls" role="tabpanel" id="fxPanel">
+      <p class="panel-title"><span data-i18n="services.controls">Controles de efectos</span><span class="mono" id="fxTitle">Desarrollo web</span></p>
+      <ul class="fx-rows" id="fxRows"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- Exportar: contacto -->
+<section id="contacto" class="export" data-track="exp">
+  <p class="label"><span class="track-badge c-play">OUT</span><span data-i18n="contact.label">Exportar</span></p>
+  <h2 class="export-title" data-i18n="contact.h2">¿Tienes un proyecto?</h2>
+  <p class="export-sub" data-i18n="contact.p">Hablemos.</p>
+
+  <div class="export-panel">
+    <p class="panel-title"><span data-i18n="contact.panel">Ajustes de exportación</span></p>
+    <dl>
+      <div><dt data-i18n="contact.format">Formato</dt><dd data-i18n="contact.formatVal">Web, vídeo o contenido</dd></div>
+      <div><dt data-i18n="contact.dest">Destino</dt><dd><a href="mailto:almeida97cs@gmail.com">almeida97cs@gmail.com</a></dd></div>
+      <div><dt data-i18n="contact.status">Estado</dt><dd><span class="ok-dot" aria-hidden="true"></span><span data-i18n="contact.statusVal">Listo para exportar</span></dd></div>
+    </dl>
+    <a class="btn-export" href="mailto:almeida97cs@gmail.com" data-cut="cursor.export"><span class="export-fill" aria-hidden="true"></span><span class="export-txt"><span data-i18n="contact.export">Exportar</span> ↗</span></a>
+  </div>
 </section>
 </main>
-<footer><span>KEVIN ALMEIDA</span><span>© 2026</span></footer>
-<div class="cursor-chip" id="cursorChip" aria-hidden="true" data-i18n="misc.cursorChip">Ver ↗</div>
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar" data-i18n-aria="misc.close">✕</button>
-  <video id="lightboxVideo" controls playsinline></video>
+
+<footer class="foot">
+  <span>KEVIN ALMEIDA, 2026</span>
+  <button class="link-btn" type="button" id="legalOpen" data-i18n="footer.legal">Aviso legal y privacidad</button>
+</footer>
+
+<!-- línea de tiempo fija (escritorio) -->
+<div class="timeline" id="timeline" aria-hidden="true">
+  <div class="tl-heads"><span>V3</span><span>V2</span><span>V1</span><span>A1</span></div>
+  <div class="tl-body" id="tlBody">
+    <div class="tl-ruler" id="tlRuler"></div>
+    <div class="tl-lanes" id="tlLanes"></div>
+    <div class="tl-head" id="tlHead"></div>
+  </div>
 </div>
-<script src="projects.js" defer></script><script src="script.js" defer></script><script src="i18n.js" defer></script>
+
+<div class="razor" id="razor" aria-hidden="true">
+  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 3h14l-3 7H8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 10v11" stroke="currentColor" stroke-width="1.6"/></svg>
+</div>
+<div class="cutline" id="cutline" aria-hidden="true"><span class="cut-label mono" id="cutLabel"></span></div>
+
+<dialog class="legal" id="legal" aria-labelledby="legalTitle">
+  <h2 id="legalTitle" data-i18n="legal.title">Aviso legal y privacidad</h2>
+  <p data-i18n="legal.p1">Titular: Kevin Almeida, Castellón de la Plana (España). Contacto: almeida97cs@gmail.com.</p>
+  <p data-i18n="legal.p2">Esta web no usa cookies ni herramientas de analítica y no recoge datos personales. Solo guarda en tu navegador el idioma que eliges, para recordarlo en tu próxima visita.</p>
+  <p data-i18n="legal.p3">Si me escribes por email, uso tus datos solo para responderte. Puedes pedirme que los borre cuando quieras escribiendo a la misma dirección.</p>
+  <p data-i18n="legal.p4">Los proyectos que aparecen pertenecen a sus clientes y se muestran como ejemplo de trabajo.</p>
+  <button class="btn btn-ghost" type="button" id="legalClose" data-i18n="misc.close">Cerrar</button>
+</dialog>
+
+<script src="i18n.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
