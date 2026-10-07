@@ -1,10 +1,11 @@
 const translations={
  es:{
+  "nav.inicio":"Inicio","nav.servicios":"Servicios","hero.play":"Ver trabajos","social.stat":"+300 seguidores","social.statSub":"en unas 6 semanas","social.pick":"Elige una cámara","canales.title":"Canales de prueba","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO y AEO","svc2.tools":"Grabación, edición, color y postproducción","svc3.tools":"Reels, miniaturas, logos y posts","svc4.tools":"Estrategia, publicación y optimización",
   "intro.skip":"Pulsa para saltar",
   "nav.web":"Webs","nav.video":"Videoclips","nav.social":"Contenido","nav.canales":"Canales","nav.contacto":"Contacto",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hola, soy Kevin.","hero.h1_line2":"Creo, desarrollo y edito.",
   "hero.intro":"Hago webs para negocios y vídeo para artistas y marcas. Me encargo de cada proyecto de principio a fin.",
-  "hero.play":"Reproducir","hero.write":"Escríbeme",
+  "hero.write":"Escríbeme",
   "bin.title":"Proyecto","bin.webs":"Webs","bin.video":"Videoclips","bin.reels":"Reels","bin.canales":"Canales",
   "monitor.program":"Programa","monitor.pause":"Pausar","monitor.resume":"Reproducir",
   "seq.retrato":"Retrato","seq.concierto":"Concierto",
@@ -39,11 +40,12 @@ const translations={
   "meta.ogDescription":"Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin."
  },
  en:{
+  "nav.inicio":"Home","nav.servicios":"Services","hero.play":"See my work","social.stat":"+300 followers","social.statSub":"in about 6 weeks","social.pick":"Pick a camera","canales.title":"Test channels","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO and AEO","svc2.tools":"Filming, editing, color and post-production","svc3.tools":"Reels, thumbnails, logos and posts","svc4.tools":"Strategy, publishing and optimization",
   "intro.skip":"Click to skip",
   "nav.web":"Websites","nav.video":"Music videos","nav.social":"Content","nav.canales":"Channels","nav.contacto":"Contact",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hi, I'm Kevin.","hero.h1_line2":"I create, build and edit.",
   "hero.intro":"I build websites for businesses and make videos for artists and brands. I handle every project from start to finish.",
-  "hero.play":"Play","hero.write":"Write to me",
+  "hero.write":"Write to me",
   "bin.title":"Project","bin.webs":"Websites","bin.video":"Music videos","bin.reels":"Reels","bin.canales":"Channels",
   "monitor.program":"Program","monitor.pause":"Pause","monitor.resume":"Play",
   "seq.retrato":"Portrait","seq.concierto":"Concert",
@@ -78,11 +80,12 @@ const translations={
   "meta.ogDescription":"Web development, video production and content creation. Real projects from start to finish."
  },
  fr:{
+  "nav.inicio":"Accueil","nav.servicios":"Services","hero.play":"Voir mon travail","social.stat":"+300 abonnés","social.statSub":"en environ 6 semaines","social.pick":"Choisissez une caméra","canales.title":"Chaînes de test","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO et AEO","svc2.tools":"Tournage, montage, étalonnage et postproduction","svc3.tools":"Reels, miniatures, logos et posts","svc4.tools":"Stratégie, publication et optimisation",
   "intro.skip":"Cliquez pour passer",
   "nav.web":"Sites web","nav.video":"Clips","nav.social":"Contenu","nav.canales":"Chaînes","nav.contacto":"Contact",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Bonjour, je suis Kevin.","hero.h1_line2":"Je crée, développe et monte.",
   "hero.intro":"Je crée des sites web pour les entreprises et des vidéos pour les artistes et les marques. Je m'occupe de chaque projet du début à la fin.",
-  "hero.play":"Lecture","hero.write":"Écrivez-moi",
+  "hero.write":"Écrivez-moi",
   "bin.title":"Projet","bin.webs":"Sites web","bin.video":"Clips","bin.reels":"Reels","bin.canales":"Chaînes",
   "monitor.program":"Programme","monitor.pause":"Pause","monitor.resume":"Lecture",
   "seq.retrato":"Portrait","seq.concierto":"Concert",
@@ -117,11 +120,12 @@ const translations={
   "meta.ogDescription":"Développement web, production audiovisuelle et création de contenu. Des projets réels du début à la fin."
  },
  ca:{
+  "nav.inicio":"Inici","nav.servicios":"Serveis","hero.play":"Veure treballs","social.stat":"+300 seguidors","social.statSub":"en unes 6 setmanes","social.pick":"Tria una càmera","canales.title":"Canals de prova","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO i AEO","svc2.tools":"Gravació, edició, color i postproducció","svc3.tools":"Reels, miniatures, logos i posts","svc4.tools":"Estratègia, publicació i optimització",
   "intro.skip":"Prem per saltar",
   "nav.web":"Webs","nav.video":"Videoclips","nav.social":"Contingut","nav.canales":"Canals","nav.contacto":"Contacte",
   "hero.eyebrow":"Kevin Almeida, Castelló","hero.h1_line1":"Hola, soc Kevin.","hero.h1_line2":"Creo, desenvolupe i edite.",
   "hero.intro":"Faig webs per a negocis i vídeo per a artistes i marques. M'encarregue de cada projecte de principi a fi.",
-  "hero.play":"Reproduir","hero.write":"Escriu-me",
+  "hero.write":"Escriu-me",
   "bin.title":"Projecte","bin.webs":"Webs","bin.video":"Videoclips","bin.reels":"Reels","bin.canales":"Canals",
   "monitor.program":"Programa","monitor.pause":"Pausa","monitor.resume":"Reproduir",
   "seq.retrato":"Retrat","seq.concierto":"Concert",
@@ -156,11 +160,12 @@ const translations={
   "meta.ogDescription":"Desenvolupament web, producció audiovisual i creació de contingut. Projectes reals de principi a fi."
  },
  de:{
+  "nav.inicio":"Start","nav.servicios":"Leistungen","hero.play":"Arbeiten ansehen","social.stat":"+300 Follower","social.statSub":"in etwa 6 Wochen","social.pick":"Kamera wählen","canales.title":"Testkanäle","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO und AEO","svc2.tools":"Dreh, Schnitt, Color Grading und Postproduktion","svc3.tools":"Reels, Thumbnails, Logos und Posts","svc4.tools":"Strategie, Veröffentlichung und Optimierung",
   "intro.skip":"Klicken zum Überspringen",
   "nav.web":"Websites","nav.video":"Musikvideos","nav.social":"Content","nav.canales":"Kanäle","nav.contacto":"Kontakt",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hallo, ich bin Kevin.","hero.h1_line2":"Ich gestalte, entwickle und schneide.",
   "hero.intro":"Ich baue Websites für Unternehmen und mache Videos für Künstler und Marken. Ich betreue jedes Projekt von Anfang bis Ende.",
-  "hero.play":"Abspielen","hero.write":"Schreib mir",
+  "hero.write":"Schreib mir",
   "bin.title":"Projekt","bin.webs":"Websites","bin.video":"Musikvideos","bin.reels":"Reels","bin.canales":"Kanäle",
   "monitor.program":"Programm","monitor.pause":"Pause","monitor.resume":"Abspielen",
   "seq.retrato":"Porträt","seq.concierto":"Konzert",
