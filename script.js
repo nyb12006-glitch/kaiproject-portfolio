@@ -50,19 +50,12 @@ if(root.classList.contains("intro-on")){
  setTimeout(end,2100);
 }
 
-/* ---------- portada: monitor de programa con sonido opcional ---------- */
-const heroVideo=$("heroVideo"),heroTc=$("heroTc"),heroToggle=$("heroToggle"),heroSound=$("heroSound"),heroAmb=$("heroAmb");
+/* ---------- portada: monitor de programa ---------- */
+const heroVideo=$("heroVideo"),heroTc=$("heroTc"),heroToggle=$("heroToggle"),heroAmb=$("heroAmb");
 // solo suena un vídeo a la vez: al activar uno se silencian los demás
 const players=new Set();
-function soloAudio(v){for(const p of players)if(p!==v){if(p===heroVideo){p.muted=true;setHeroSound();}else p.pause();}}
-function setHeroSound(){
- if(!heroSound)return;
- const on=!heroVideo.muted;
- heroSound.setAttribute("aria-pressed",on);
- const lab=heroSound.querySelector("[data-i18n]");lab.dataset.i18n=on?"monitor.soundOff":"monitor.soundOn";lab.textContent=t(lab.dataset.i18n);
-}
+function soloAudio(v){for(const p of players)if(p!==v)p.pause();}
 if(heroVideo){
- players.add(heroVideo);
  followVideo(heroVideo,heroAmb);
  const draw=()=>{heroTc.textContent=tc(heroVideo.currentTime);if(!heroVideo.paused)requestAnimationFrame(draw);};
  heroVideo.addEventListener("play",()=>requestAnimationFrame(draw));
@@ -71,12 +64,6 @@ if(heroVideo){
  let userPaused=reduced;
  heroToggle.addEventListener("click",()=>{if(heroVideo.paused){userPaused=false;heroVideo.play().catch(()=>{});}else{userPaused=true;heroVideo.pause();}});
  heroVideo.addEventListener("play",setToggle);heroVideo.addEventListener("pause",setToggle);setToggle();
- heroSound.addEventListener("click",()=>{
-  heroVideo.muted=!heroVideo.muted;
-  if(!heroVideo.muted){soloAudio(heroVideo);heroVideo.currentTime=0;userPaused=false;heroVideo.play().catch(()=>{});}
-  setHeroSound();
- });
- setHeroSound();
  new IntersectionObserver(([e])=>{if(e.isIntersecting){if(!userPaused)heroVideo.play().catch(()=>{});}else heroVideo.pause();},{threshold:.15}).observe(heroVideo);
 }
 
@@ -152,8 +139,8 @@ function loadSource(b,cut){
  const tn=b.querySelector(".thumb-name");
  if(tn.dataset.i18n){title.dataset.i18n=tn.dataset.i18n;}else title.removeAttribute("data-i18n");
  title.textContent=vText(b,".thumb-name");
- if(yt){kind.removeAttribute("data-i18n");kind.textContent="YouTube";by.textContent=b.querySelector(".thumb-sub").textContent;}
- else{kind.dataset.i18n="video.local";kind.textContent=t("video.local");by.textContent="";}
+ kind.hidden=!yt;kind.textContent=yt?"YouTube":"";
+ by.textContent=b.querySelector(".thumb-sub").textContent;
  if(cut&&!reduced){srcScreen.classList.remove("is-cutting");void srcScreen.offsetWidth;srcScreen.classList.add("is-cutting");}
 }
 if(srcScreen){
@@ -266,7 +253,6 @@ if(legal){
 
 document.addEventListener("langchange",()=>{
  fitText();
- if(heroSound)setHeroSound();
  if(srcCurrent&&$("srcTitle").dataset.i18n)$("srcTitle").textContent=t($("srcTitle").dataset.i18n);
  if(heroToggle)heroToggle.setAttribute("aria-label",t(heroToggle.dataset.i18nAria||"monitor.pause"));
  requestAnimationFrame(()=>{sizeTimeline();onScroll();});

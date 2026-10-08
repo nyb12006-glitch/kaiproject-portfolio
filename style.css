@@ -117,7 +117,6 @@ html:not(.js) .render::after{display:none}
 .transport-bar{display:flex;align-items:center;gap:10px;padding-top:12px}
 .transport{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:40px;height:36px;padding:0 12px;border-radius:6px;background:var(--bg-2);border:1px solid var(--line-2);font-size:12px;font-weight:600;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
 .transport:hover{border-color:var(--text)}
-.transport.sound[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#06101e}
 .tc-small{margin-left:auto;font-size:13px;color:var(--muted)}
 /* icono de altavoz: tachado cuando está en silencio */
 .snd-ico{position:relative;width:16px;height:12px;flex:none}
