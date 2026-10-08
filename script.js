@@ -265,16 +265,28 @@ if(legal){
 }
 
 document.addEventListener("langchange",()=>{
+ fitText();
  if(heroSound)setHeroSound();
  if(srcCurrent&&$("srcTitle").dataset.i18n)$("srcTitle").textContent=t($("srcTitle").dataset.i18n);
  if(heroToggle)heroToggle.setAttribute("aria-label",t(heroToggle.dataset.i18nAria||"monitor.pause"));
  requestAnimationFrame(()=>{sizeTimeline();onScroll();});
 });
 
+/* ---------- titulares: si una palabra no cabe en su caja, la letra baja lo justo ---------- */
+const fitEls=[...document.querySelectorAll(".h1-big,h2")];
+function fitText(){
+ for(const el of fitEls){
+  el.style.fontSize="";
+  let size=parseFloat(getComputedStyle(el).fontSize),guard=40;
+  while(el.scrollWidth>el.clientWidth+1&&size>24&&guard--){size-=2;el.style.fontSize=`${size}px`;}
+ }
+}
+
 /* ---------- bucle de scroll ---------- */
 let ticking=false;
 function onScroll(){onScrollUI();ticking=false;}
 window.addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
-window.addEventListener("resize",()=>{sizeTimeline();sizeShots();onScroll();});
+window.addEventListener("resize",()=>{fitText();sizeTimeline();sizeShots();onScroll();});
 window.addEventListener("load",()=>{sizeTimeline();onScroll();});
-sizeTimeline();onScroll();
+fitText();sizeTimeline();onScroll();
+if(document.fonts)document.fonts.ready.then(()=>{fitText();sizeTimeline();onScroll();});
