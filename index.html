@@ -76,87 +76,89 @@
 
 <main>
 
-<!-- Monitor de programa: la portada es el vídeo a pantalla completa -->
+<!-- Monitor de programa -->
 <section id="inicio" class="hero" data-color="play">
-  <video id="heroVideo" class="hero-video" muted loop playsinline autoplay preload="auto" poster="assets/images/montaje-hero.webp">
-    <source src="assets/videos/montaje-hero.mp4" type="video/mp4">
-  </video>
-  <div class="hero-shade" aria-hidden="true"></div>
-  <div class="wrap hero-inner">
-    <p class="kicker" data-i18n="hero.eyebrow">Kevin Almeida, Castellón</p>
-    <h1>
-      <span class="h1-small" data-i18n="hero.h1_line1">Hola, soy Kevin.</span>
-      <span class="h1-big render" data-i18n="hero.h1_line2">Creo, desarrollo y edito.</span>
-    </h1>
-    <p class="hero-intro" data-i18n="hero.intro">Hago webs para negocios y vídeo para artistas y marcas. Me encargo de cada proyecto de principio a fin.</p>
-    <div class="actions">
-      <a class="btn btn-solid" href="#web" data-cut="cursor.play"><span aria-hidden="true">▶</span><span data-i18n="hero.play">Ver trabajos</span></a>
-      <a class="btn btn-line" href="#contacto" data-i18n="hero.write">Escríbeme</a>
-    </div>
-  </div>
-  <div class="hero-tc">
-    <button class="transport" id="heroToggle" type="button" aria-label="Pausar" data-i18n-aria="monitor.pause">❚❚</button>
-    <span class="mono" id="heroTc">00:00:00:00</span>
-  </div>
-</section>
-
-<!-- 01 Webs: el visor recorre cada web con el scroll -->
-<section id="web" class="scrub" data-color="web">
-  <div class="scrub-sticky">
-    <div class="wrap grid">
-      <div class="col-side">
-        <header class="sec-head">
-          <p class="sec-num mono">01</p>
-          <h2 data-i18n="web.h2">Webs</h2>
-          <p class="sec-desc" data-i18n="web.desc">Desarrollo desde cero, optimización y proyectos que funcionan.</p>
-        </header>
-        <ol class="clips" id="webList">
-          <li class="clip is-on" data-shot="0">
-            <a href="https://www.sampayoabogados.com/" target="_blank" rel="noopener" data-cut="cursor.web">
-              <span class="clip-name">Sampayo Abogados</span>
-              <span class="clip-desc" data-i18n="web.sampayo.desc">Desarrollo desde cero con SEO, GEO y AEO</span>
-              <span class="clip-bar" aria-hidden="true"><i></i></span>
-            </a>
-          </li>
-          <li class="clip" data-shot="1">
-            <a href="https://cultivafungi.com/" target="_blank" rel="noopener" data-cut="cursor.web">
-              <span class="clip-name">CultivaFungi</span>
-              <span class="clip-desc" data-i18n="web.cultiva.desc">Optimización de la web y la tienda online</span>
-              <span class="clip-bar" aria-hidden="true"><i></i></span>
-            </a>
-          </li>
-          <li class="clip" data-shot="2">
-            <a href="https://experience-barber-shop.vercel.app/" target="_blank" rel="noopener" data-cut="cursor.web">
-              <span class="clip-name">Experience Barber Shop</span>
-              <span class="clip-desc" data-i18n="web.demo.desc">Demo funcional desarrollada desde cero</span>
-              <span class="clip-bar" aria-hidden="true"><i></i></span>
-            </a>
-          </li>
-          <li class="clip" data-shot="3">
-            <a href="https://dacapo-web-taupe.vercel.app/" target="_blank" rel="noopener" data-cut="cursor.web">
-              <span class="clip-name">DACAPO</span>
-              <span class="clip-desc" data-i18n="web.demo.desc">Demo funcional desarrollada desde cero</span>
-              <span class="clip-bar" aria-hidden="true"><i></i></span>
-            </a>
-          </li>
-        </ol>
+  <div class="wrap grid hero-grid">
+    <div class="hero-copy">
+      <p class="kicker" data-i18n="hero.eyebrow">Kevin Almeida, Castellón</p>
+      <h1>
+        <span class="h1-small" data-i18n="hero.h1_line1">Hola, soy Kevin.</span>
+        <span class="h1-big render" data-i18n="hero.h1_line2">Creo, desarrollo y edito.</span>
+      </h1>
+      <p class="hero-intro" data-i18n="hero.intro">Hago webs para negocios y vídeo para artistas y marcas. Me encargo de cada proyecto de principio a fin.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="#web" data-cut="cursor.play"><span aria-hidden="true">▶</span><span data-i18n="hero.play">Ver trabajos</span></a>
+        <a class="btn btn-line" href="#contacto" data-i18n="hero.write">Escríbeme</a>
       </div>
-      <div class="col-main">
-        <div class="screen-wrap ambient" id="webAmb">
-          <div class="screen-top mono"><span id="webUrl">sampayoabogados.com</span><a id="webLink" href="https://www.sampayoabogados.com/" target="_blank" rel="noopener" data-cut="cursor.web"><span data-i18n="web.cta">Visitar web ↗</span></a></div>
-          <div class="screen web-screen" id="webScreen">
-            <img class="web-shot is-on" src="assets/images/web-sampayo.webp" alt="Página de Sampayo Abogados" width="960" height="2752" decoding="async">
-            <img class="web-shot" src="assets/images/web-cultivafungi.webp" alt="Página de CultivaFungi" width="960" height="2400" loading="lazy" decoding="async">
-            <img class="web-shot" src="assets/images/web-experience.webp" alt="Página de Experience Barber Shop" width="960" height="2400" loading="lazy" decoding="async">
-            <img class="web-shot" src="assets/images/web-dacapo.webp" alt="Página de DACAPO" width="960" height="1966" loading="lazy" decoding="async">
-          </div>
+    </div>
+    <div class="hero-monitor">
+      <div class="screen-wrap ambient" id="heroAmb">
+        <div class="screen hero-screen">
+          <video id="heroVideo" class="hero-video" muted loop playsinline autoplay preload="auto" poster="assets/images/montaje-hero.webp">
+            <source src="assets/videos/montaje-hero.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="transport-bar">
+          <button class="transport" id="heroToggle" type="button" aria-label="Pausar" data-i18n-aria="monitor.pause">❚❚</button>
+          <button class="transport sound" id="heroSound" type="button" aria-pressed="false"><span class="snd-ico" aria-hidden="true"></span><span data-i18n="monitor.soundOn">Activar sonido</span></button>
+          <span class="mono tc-small" id="heroTc">00:00:00:00</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 02 Videoclips: monitor de origen y lista de clips -->
+<!-- 01 Webs: monitor y miniaturas -->
+<section id="web" class="sec" data-color="web">
+  <div class="wrap grid">
+    <header class="sec-head col-full">
+      <p class="sec-num mono">01</p>
+      <h2 data-i18n="web.h2">Webs</h2>
+      <p class="sec-desc" data-i18n="web.desc">Desarrollo desde cero, optimización y proyectos que funcionan.</p>
+    </header>
+    <div class="col-main">
+      <div class="screen-wrap ambient" id="webAmb">
+        <div class="screen web-screen" id="webScreen">
+          <img class="web-shot is-on" src="assets/images/web-sampayo.webp" alt="Página de Sampayo Abogados" width="1920" height="4800" decoding="async">
+          <img class="web-shot" src="assets/images/web-cultivafungi.webp" alt="Página de CultivaFungi" width="1920" height="4800" loading="lazy" decoding="async">
+          <img class="web-shot" src="assets/images/web-experience.webp" alt="Página de Experience Barber Shop" width="1920" height="4800" loading="lazy" decoding="async">
+          <img class="web-shot" src="assets/images/web-dacapo.webp" alt="Página de DACAPO" width="1920" height="3933" loading="lazy" decoding="async">
+          <span class="screen-hint mono" data-i18n="web.hint">Pasa el ratón para recorrerla</span>
+        </div>
+      </div>
+    </div>
+    <aside class="col-side detail" aria-live="polite">
+      <p class="mini mono" id="webHost">sampayoabogados.com</p>
+      <h3 class="detail-title" id="webName">Sampayo Abogados</h3>
+      <p class="detail-desc" id="webDesc" data-i18n="web.sampayo.desc">Desarrollo desde cero con SEO, GEO y AEO</p>
+      <a class="btn btn-solid" id="webLink" href="https://www.sampayoabogados.com/" target="_blank" rel="noopener" data-cut="cursor.web"><span data-i18n="web.cta">Visitar web ↗</span></a>
+    </aside>
+    <div class="col-full thumbs thumbs-4" id="webThumbs">
+      <button class="thumb is-on" type="button" data-i="0" data-name="Sampayo Abogados" data-href="https://www.sampayoabogados.com/" data-host="sampayoabogados.com" data-desc="web.sampayo.desc" data-cut="cursor.pick">
+        <span class="thumb-img"><img src="assets/images/thumb-sampayo.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="thumb-name">Sampayo Abogados</span>
+        <span class="thumb-sub" data-i18n="web.sampayo.desc">Desarrollo desde cero con SEO, GEO y AEO</span>
+      </button>
+      <button class="thumb" type="button" data-i="1" data-name="CultivaFungi" data-href="https://cultivafungi.com/" data-host="cultivafungi.com" data-desc="web.cultiva.desc" data-cut="cursor.pick">
+        <span class="thumb-img"><img src="assets/images/thumb-cultivafungi.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="thumb-name">CultivaFungi</span>
+        <span class="thumb-sub" data-i18n="web.cultiva.desc">Optimización de la web y la tienda online</span>
+      </button>
+      <button class="thumb" type="button" data-i="2" data-name="Experience Barber Shop" data-href="https://experience-barber-shop.vercel.app/" data-host="experience-barber-shop.vercel.app" data-desc="web.demo.desc" data-cut="cursor.pick">
+        <span class="thumb-img"><img src="assets/images/thumb-experience.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="thumb-name">Experience Barber Shop</span>
+        <span class="thumb-sub" data-i18n="web.demo.desc">Demo funcional desarrollada desde cero</span>
+      </button>
+      <button class="thumb" type="button" data-i="3" data-name="DACAPO" data-href="https://dacapo-web-taupe.vercel.app/" data-host="dacapo-web-taupe.vercel.app" data-desc="web.demo.desc" data-cut="cursor.pick">
+        <span class="thumb-img"><img src="assets/images/thumb-dacapo.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="thumb-name">DACAPO</span>
+        <span class="thumb-sub" data-i18n="web.demo.desc">Demo funcional desarrollada desde cero</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Videoclips: monitor y miniaturas -->
 <section id="video" class="sec" data-color="vid">
   <div class="wrap grid">
     <header class="sec-head col-full">
@@ -167,27 +169,50 @@
     <div class="col-main">
       <div class="screen-wrap ambient" id="srcAmb">
         <div class="screen source-screen" id="srcScreen">
-          <img id="srcPoster" class="source-poster" src="assets/images/retrato.webp" alt="" width="1280" height="720" decoding="async">
+          <img id="srcPoster" class="source-poster" src="assets/images/retrato.webp" alt="" width="1920" height="1080" decoding="async">
           <video id="srcVideo" class="source-video" controls playsinline preload="none"></video>
-          <button class="screen-btn" id="srcPlay" type="button" data-cut="cursor.clip"><span aria-hidden="true">▶</span><span data-i18n="video.play">Reproducir</span></button>
+          <button class="screen-btn" id="srcPlay" type="button" data-cut="cursor.clip"><span aria-hidden="true">▶</span><span data-i18n="video.playSound">Reproducir con sonido</span></button>
           <a class="screen-btn" id="srcYt" href="#" target="_blank" rel="noopener" data-cut="cursor.yt" hidden><span data-i18n="video.yt">Ver en YouTube ↗</span></a>
         </div>
       </div>
     </div>
-    <ol class="col-side vlist" id="srcList">
-      <li><button class="vitem is-on" type="button" data-cut="cursor.clip" data-kind="local" data-src="assets/videos/retrato-full.mp4" data-poster="assets/images/retrato.webp">
-        <span class="vnum mono">01</span><span class="vtitle" data-i18n="video.retrato.title">Retrato</span><span class="vby" data-i18n="video.local">Producción propia</span></button></li>
-      <li><button class="vitem" type="button" data-cut="cursor.clip" data-kind="local" data-src="assets/videos/concierto-full.mp4" data-poster="assets/images/concierto.webp">
-        <span class="vnum mono">02</span><span class="vtitle" data-i18n="video.concierto.title">Recap del concierto</span><span class="vby" data-i18n="video.local">Producción propia</span></button></li>
-      <li><button class="vitem" type="button" data-cut="cursor.clip" data-kind="yt" data-yt="gA-hgcPCQ-o" data-poster="assets/images/yt-gA-hgcPCQ-o.webp">
-        <span class="vnum mono">03</span><span class="vtitle">Bala</span><span class="vby">Flux Nobody</span></button></li>
-      <li><button class="vitem" type="button" data-cut="cursor.clip" data-kind="yt" data-yt="nVmcIX1yJ10" data-poster="assets/images/yt-nVmcIX1yJ10.webp">
-        <span class="vnum mono">04</span><span class="vtitle">Hola bebe</span><span class="vby">Flux Nobody</span></button></li>
-      <li><button class="vitem" type="button" data-cut="cursor.clip" data-kind="yt" data-yt="DRUbploxU4w" data-poster="assets/images/yt-DRUbploxU4w.webp">
-        <span class="vnum mono">05</span><span class="vtitle">Vine a quedarme</span><span class="vby">Victor HA, Ess</span></button></li>
-      <li><button class="vitem" type="button" data-cut="cursor.clip" data-kind="yt" data-yt="0jR-6U8VLjE" data-poster="assets/images/yt-0jR-6U8VLjE.webp">
-        <span class="vnum mono">06</span><span class="vtitle">Maldita Endemonia</span><span class="vby">Jumi, PeskyShappire</span></button></li>
-    </ol>
+    <aside class="col-side detail" aria-live="polite">
+      <p class="mini mono" id="srcKind" data-i18n="video.local">Producción propia</p>
+      <h3 class="detail-title" id="srcTitle" data-i18n="video.retrato.title">Retrato</h3>
+      <p class="detail-desc" id="srcBy"></p>
+    </aside>
+    <div class="col-full thumbs thumbs-6" id="srcThumbs">
+      <button class="thumb is-on" type="button" data-kind="local" data-poster="assets/images/retrato.webp" data-src="assets/videos/retrato-full.mp4" data-cut="cursor.clip">
+        <span class="thumb-img"><img src="assets/images/retrato.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true">▶</span></span>
+        <span class="thumb-name" data-i18n="video.retrato.title">Retrato</span>
+        <span class="thumb-sub" data-i18n="video.local">Producción propia</span>
+      </button>
+      <button class="thumb" type="button" data-kind="local" data-poster="assets/images/concierto.webp" data-src="assets/videos/concierto-full.mp4" data-cut="cursor.clip">
+        <span class="thumb-img"><img src="assets/images/concierto.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true">▶</span></span>
+        <span class="thumb-name" data-i18n="video.concierto.title">Recap del concierto</span>
+        <span class="thumb-sub" data-i18n="video.local">Producción propia</span>
+      </button>
+      <button class="thumb" type="button" data-kind="yt" data-poster="assets/images/yt-gA-hgcPCQ-o.webp" data-yt="gA-hgcPCQ-o" data-cut="cursor.clip">
+        <span class="thumb-img"><img src="assets/images/yt-gA-hgcPCQ-o.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true">▶</span></span>
+        <span class="thumb-name">Bala</span>
+        <span class="thumb-sub">Flux Nobody</span>
+      </button>
+      <button class="thumb" type="button" data-kind="yt" data-poster="assets/images/yt-nVmcIX1yJ10.webp" data-yt="nVmcIX1yJ10" data-cut="cursor.clip">
+        <span class="thumb-img"><img src="assets/images/yt-nVmcIX1yJ10.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true">▶</span></span>
+        <span class="thumb-name">Hola bebe</span>
+        <span class="thumb-sub">Flux Nobody</span>
+      </button>
+      <button class="thumb" type="button" data-kind="yt" data-poster="assets/images/yt-DRUbploxU4w.webp" data-yt="DRUbploxU4w" data-cut="cursor.clip">
+        <span class="thumb-img"><img src="assets/images/yt-DRUbploxU4w.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true">▶</span></span>
+        <span class="thumb-name">Vine a quedarme</span>
+        <span class="thumb-sub">Victor HA, Ess</span>
+      </button>
+      <button class="thumb" type="button" data-kind="yt" data-poster="assets/images/yt-0jR-6U8VLjE.webp" data-yt="0jR-6U8VLjE" data-cut="cursor.clip">
+        <span class="thumb-img"><img src="assets/images/yt-0jR-6U8VLjE.webp" alt="" width="960" height="540" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true">▶</span></span>
+        <span class="thumb-name">Maldita Endemonia</span>
+        <span class="thumb-sub">Jumi, PeskyShappire</span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -212,20 +237,20 @@
       <p class="stat"><strong data-i18n="social.stat">+300 seguidores</strong><span data-i18n="social.statSub">en unas 6 semanas</span></p>
       <p class="mini mono" data-i18n="social.pick">Elige una cámara</p>
       <div class="angles" id="mcAngles">
-        <button class="angle is-on" type="button" aria-label="Reel 1" data-cut="cursor.cam" data-src="assets/videos/reel-4.mp4" data-poster="assets/images/reel-4.webp" data-href="https://www.instagram.com/p/Ddy8zqKtnGw/">
-          <img src="assets/images/reel-4.webp" alt="" width="480" height="854" loading="lazy" decoding="async"><span class="mono">1</span></button>
-        <button class="angle" type="button" aria-label="Reel 2" data-cut="cursor.cam" data-src="assets/videos/reel-1.mp4" data-poster="assets/images/reel-1.webp" data-href="https://www.instagram.com/reel/Db-2nknNxbb/">
-          <img src="assets/images/reel-1.webp" alt="" width="480" height="854" loading="lazy" decoding="async"><span class="mono">2</span></button>
-        <button class="angle" type="button" aria-label="Reel 3" data-cut="cursor.cam" data-src="assets/videos/reel-2.mp4" data-poster="assets/images/reel-2.webp" data-href="https://www.instagram.com/reel/DcGkDi8N0nN/">
-          <img src="assets/images/reel-2.webp" alt="" width="480" height="854" loading="lazy" decoding="async"><span class="mono">3</span></button>
+        <button class="angle is-on" type="button" aria-label="Reel 1" data-cut="cursor.cam" data-src="assets/videos/reel-4.mp4" data-full="assets/videos/reel-4-full.mp4" data-poster="assets/images/reel-4.webp" data-href="https://www.instagram.com/p/Ddy8zqKtnGw/">
+          <img src="assets/images/reel-4.webp" alt="" width="720" height="1280" loading="lazy" decoding="async"><span class="mono">1</span></button>
+        <button class="angle" type="button" aria-label="Reel 2" data-cut="cursor.cam" data-src="assets/videos/reel-1.mp4" data-full="assets/videos/reel-1-full.mp4" data-poster="assets/images/reel-1.webp" data-href="https://www.instagram.com/reel/Db-2nknNxbb/">
+          <img src="assets/images/reel-1.webp" alt="" width="720" height="1280" loading="lazy" decoding="async"><span class="mono">2</span></button>
+        <button class="angle" type="button" aria-label="Reel 3" data-cut="cursor.cam" data-src="assets/videos/reel-2.mp4" data-full="assets/videos/reel-2-full.mp4" data-poster="assets/images/reel-2.webp" data-href="https://www.instagram.com/reel/DcGkDi8N0nN/">
+          <img src="assets/images/reel-2.webp" alt="" width="720" height="1280" loading="lazy" decoding="async"><span class="mono">3</span></button>
         <button class="angle" type="button" aria-label="Reel 4" data-cut="cursor.cam" data-src="assets/videos/reel-3.mp4" data-poster="assets/images/reel-3.webp" data-full="assets/videos/reel-3-full.mp4">
           <img src="assets/images/reel-3.webp" alt="" width="720" height="1280" loading="lazy" decoding="async"><span class="mono">4</span></button>
-        <button class="angle" type="button" aria-label="Reel 5" data-cut="cursor.cam" data-src="assets/videos/reel-5.mp4" data-poster="assets/images/reel-5.webp" data-href="https://www.instagram.com/p/Dd1n2vnoXIe/">
-          <img src="assets/images/reel-5.webp" alt="" width="480" height="854" loading="lazy" decoding="async"><span class="mono">5</span></button>
+        <button class="angle" type="button" aria-label="Reel 5" data-cut="cursor.cam" data-src="assets/videos/reel-5.mp4" data-full="assets/videos/reel-5-full.mp4" data-poster="assets/images/reel-5.webp" data-href="https://www.instagram.com/p/Dd1n2vnoXIe/">
+          <img src="assets/images/reel-5.webp" alt="" width="720" height="1280" loading="lazy" decoding="async"><span class="mono">5</span></button>
       </div>
       <div class="actions">
+        <button id="mcSound" class="btn btn-solid" type="button" data-cut="cursor.sound"><span class="snd-ico" aria-hidden="true"></span><span data-i18n="social.sound">Ver completo con sonido</span></button>
         <a id="mcLink" class="btn btn-line" href="https://www.instagram.com/p/Ddy8zqKtnGw/" target="_blank" rel="noopener" data-cut="cursor.ig"><span data-i18n="social.ig">Ver reel en Instagram ↗</span></a>
-        <button id="mcFull" class="btn btn-line" type="button" hidden data-cut="cursor.clip"><span data-i18n="social.full">Ver clip completo</span></button>
       </div>
 
       <div class="channels">

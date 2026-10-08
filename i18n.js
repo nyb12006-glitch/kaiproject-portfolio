@@ -1,5 +1,6 @@
 const translations={
  es:{
+  "monitor.soundOn":"Activar sonido","monitor.soundOff":"Silenciar","web.hint":"Pasa el ratón para recorrerla","video.playSound":"Reproducir con sonido","social.sound":"Ver completo con sonido","cursor.pick":"Ver en el monitor","cursor.sound":"Con sonido",
   "nav.inicio":"Inicio","nav.servicios":"Servicios","hero.play":"Ver trabajos","social.stat":"+300 seguidores","social.statSub":"en unas 6 semanas","social.pick":"Elige una cámara","canales.title":"Canales de prueba","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO y AEO","svc2.tools":"Grabación, edición, color y postproducción","svc3.tools":"Reels, miniaturas, logos y posts","svc4.tools":"Estrategia, publicación y optimización",
   "intro.skip":"Pulsa para saltar",
   "nav.web":"Webs","nav.video":"Videoclips","nav.social":"Contenido","nav.canales":"Canales","nav.contacto":"Contacto",
@@ -10,7 +11,7 @@ const translations={
   "monitor.program":"Programa","monitor.pause":"Pausar","monitor.resume":"Reproducir",
   "seq.retrato":"Retrato","seq.concierto":"Concierto",
   "web.label":"Pista de vídeo 1","web.h2":"Webs","web.desc":"Desarrollo desde cero, optimización y proyectos que funcionan.",
-  "web.clip":"Clip","web.hint":"Baja para reproducir la secuencia","web.cta":"Visitar web ↗",
+  "web.clip":"Clip","web.cta":"Visitar web ↗",
   "web.sampayo.desc":"Desarrollo desde cero con SEO, GEO y AEO","web.cultiva.desc":"Optimización de la web y la tienda online","web.demo.desc":"Demo funcional desarrollada desde cero",
   "video.label":"Pista de vídeo 2","video.h2":"Videoclips","video.desc":"Más de 10 videoclips. Grabación, edición, color y postproducción.",
   "video.source":"Origen","video.local":"Producción propia","video.play":"Reproducir","video.yt":"Ver en YouTube ↗",
@@ -40,6 +41,7 @@ const translations={
   "meta.ogDescription":"Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin."
  },
  en:{
+  "monitor.soundOn":"Turn sound on","monitor.soundOff":"Mute","web.hint":"Hover to scroll through it","video.playSound":"Play with sound","social.sound":"Watch in full with sound","cursor.pick":"Show in monitor","cursor.sound":"With sound",
   "nav.inicio":"Home","nav.servicios":"Services","hero.play":"See my work","social.stat":"+300 followers","social.statSub":"in about 6 weeks","social.pick":"Pick a camera","canales.title":"Test channels","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO and AEO","svc2.tools":"Filming, editing, color and post-production","svc3.tools":"Reels, thumbnails, logos and posts","svc4.tools":"Strategy, publishing and optimization",
   "intro.skip":"Click to skip",
   "nav.web":"Websites","nav.video":"Music videos","nav.social":"Content","nav.canales":"Channels","nav.contacto":"Contact",
@@ -50,7 +52,7 @@ const translations={
   "monitor.program":"Program","monitor.pause":"Pause","monitor.resume":"Play",
   "seq.retrato":"Portrait","seq.concierto":"Concert",
   "web.label":"Video track 1","web.h2":"Websites","web.desc":"Built from scratch, optimized, and made to work.",
-  "web.clip":"Clip","web.hint":"Scroll to play the sequence","web.cta":"Visit site ↗",
+  "web.clip":"Clip","web.cta":"Visit site ↗",
   "web.sampayo.desc":"Built from scratch with SEO, GEO and AEO","web.cultiva.desc":"Website and online store optimization","web.demo.desc":"Working demo built from scratch",
   "video.label":"Video track 2","video.h2":"Music videos","video.desc":"More than 10 music videos. Filming, editing, color and post-production.",
   "video.source":"Source","video.local":"Original production","video.play":"Play","video.yt":"Watch on YouTube ↗",
@@ -80,6 +82,7 @@ const translations={
   "meta.ogDescription":"Web development, video production and content creation. Real projects from start to finish."
  },
  fr:{
+  "monitor.soundOn":"Activer le son","monitor.soundOff":"Couper le son","web.hint":"Survolez pour la parcourir","video.playSound":"Lire avec le son","social.sound":"Voir en entier avec le son","cursor.pick":"Voir sur le moniteur","cursor.sound":"Avec le son",
   "nav.inicio":"Accueil","nav.servicios":"Services","hero.play":"Voir mon travail","social.stat":"+300 abonnés","social.statSub":"en environ 6 semaines","social.pick":"Choisissez une caméra","canales.title":"Chaînes de test","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO et AEO","svc2.tools":"Tournage, montage, étalonnage et postproduction","svc3.tools":"Reels, miniatures, logos et posts","svc4.tools":"Stratégie, publication et optimisation",
   "intro.skip":"Cliquez pour passer",
   "nav.web":"Sites web","nav.video":"Clips","nav.social":"Contenu","nav.canales":"Chaînes","nav.contacto":"Contact",
@@ -90,7 +93,7 @@ const translations={
   "monitor.program":"Programme","monitor.pause":"Pause","monitor.resume":"Lecture",
   "seq.retrato":"Portrait","seq.concierto":"Concert",
   "web.label":"Piste vidéo 1","web.h2":"Sites web","web.desc":"Développement sur mesure, optimisation et projets qui fonctionnent.",
-  "web.clip":"Clip","web.hint":"Faites défiler pour lire la séquence","web.cta":"Voir le site ↗",
+  "web.clip":"Clip","web.cta":"Voir le site ↗",
   "web.sampayo.desc":"Développement sur mesure avec SEO, GEO et AEO","web.cultiva.desc":"Optimisation du site et de la boutique en ligne","web.demo.desc":"Démo fonctionnelle développée de zéro",
   "video.label":"Piste vidéo 2","video.h2":"Clips","video.desc":"Plus de 10 clips. Tournage, montage, étalonnage et postproduction.",
   "video.source":"Source","video.local":"Production propre","video.play":"Lecture","video.yt":"Voir sur YouTube ↗",
@@ -120,6 +123,7 @@ const translations={
   "meta.ogDescription":"Développement web, production audiovisuelle et création de contenu. Des projets réels du début à la fin."
  },
  ca:{
+  "monitor.soundOn":"Activar el so","monitor.soundOff":"Silenciar","web.hint":"Passa el ratolí per recórrer-la","video.playSound":"Reproduir amb so","social.sound":"Veure sencer amb so","cursor.pick":"Veure al monitor","cursor.sound":"Amb so",
   "nav.inicio":"Inici","nav.servicios":"Serveis","hero.play":"Veure treballs","social.stat":"+300 seguidors","social.statSub":"en unes 6 setmanes","social.pick":"Tria una càmera","canales.title":"Canals de prova","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO i AEO","svc2.tools":"Gravació, edició, color i postproducció","svc3.tools":"Reels, miniatures, logos i posts","svc4.tools":"Estratègia, publicació i optimització",
   "intro.skip":"Prem per saltar",
   "nav.web":"Webs","nav.video":"Videoclips","nav.social":"Contingut","nav.canales":"Canals","nav.contacto":"Contacte",
@@ -130,7 +134,7 @@ const translations={
   "monitor.program":"Programa","monitor.pause":"Pausa","monitor.resume":"Reproduir",
   "seq.retrato":"Retrat","seq.concierto":"Concert",
   "web.label":"Pista de vídeo 1","web.h2":"Webs","web.desc":"Desenvolupament des de zero, optimització i projectes que funcionen.",
-  "web.clip":"Clip","web.hint":"Baixa per reproduir la seqüència","web.cta":"Visitar web ↗",
+  "web.clip":"Clip","web.cta":"Visitar web ↗",
   "web.sampayo.desc":"Desenvolupament des de zero amb SEO, GEO i AEO","web.cultiva.desc":"Optimització de la web i la botiga en línia","web.demo.desc":"Demo funcional desenvolupada des de zero",
   "video.label":"Pista de vídeo 2","video.h2":"Videoclips","video.desc":"Més de 10 videoclips. Gravació, edició, color i postproducció.",
   "video.source":"Origen","video.local":"Producció pròpia","video.play":"Reproduir","video.yt":"Veure a YouTube ↗",
@@ -160,6 +164,7 @@ const translations={
   "meta.ogDescription":"Desenvolupament web, producció audiovisual i creació de contingut. Projectes reals de principi a fi."
  },
  de:{
+  "monitor.soundOn":"Ton einschalten","monitor.soundOff":"Stumm","web.hint":"Zum Durchscrollen mit der Maus darüberfahren","video.playSound":"Mit Ton abspielen","social.sound":"Ganz mit Ton ansehen","cursor.pick":"Im Monitor zeigen","cursor.sound":"Mit Ton",
   "nav.inicio":"Start","nav.servicios":"Leistungen","hero.play":"Arbeiten ansehen","social.stat":"+300 Follower","social.statSub":"in etwa 6 Wochen","social.pick":"Kamera wählen","canales.title":"Testkanäle","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO und AEO","svc2.tools":"Dreh, Schnitt, Color Grading und Postproduktion","svc3.tools":"Reels, Thumbnails, Logos und Posts","svc4.tools":"Strategie, Veröffentlichung und Optimierung",
   "intro.skip":"Klicken zum Überspringen",
   "nav.web":"Websites","nav.video":"Musikvideos","nav.social":"Content","nav.canales":"Kanäle","nav.contacto":"Kontakt",
@@ -170,7 +175,7 @@ const translations={
   "monitor.program":"Programm","monitor.pause":"Pause","monitor.resume":"Abspielen",
   "seq.retrato":"Porträt","seq.concierto":"Konzert",
   "web.label":"Videospur 1","web.h2":"Websites","web.desc":"Von Grund auf entwickelt, optimiert und gemacht, um zu funktionieren.",
-  "web.clip":"Clip","web.hint":"Scrollen, um die Sequenz abzuspielen","web.cta":"Website besuchen ↗",
+  "web.clip":"Clip","web.cta":"Website besuchen ↗",
   "web.sampayo.desc":"Von Grund auf entwickelt, mit SEO, GEO und AEO","web.cultiva.desc":"Optimierung von Website und Onlineshop","web.demo.desc":"Funktionsfähige Demo, von Grund auf entwickelt",
   "video.label":"Videospur 2","video.h2":"Musikvideos","video.desc":"Mehr als 10 Musikvideos. Dreh, Schnitt, Color Grading und Postproduktion.",
   "video.source":"Quelle","video.local":"Eigenproduktion","video.play":"Abspielen","video.yt":"Auf YouTube ansehen ↗",
