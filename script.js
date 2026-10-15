@@ -78,6 +78,8 @@ function sizeTimeline(){
  // en móvil van iguales para que se lean todos los nombres
  for(const c of tlClips)if(c.s)c.el.style.flexGrow=tlWide.matches?String(Math.max(1,c.s.offsetHeight)):"1";
 }
+// mientras el clip activo se ensancha en móvil, el cabezal sigue su posición final
+tlLane.addEventListener("transitionend",e=>{if(e.propertyName==="flex-grow")onScrollUI();});
 function onScrollUI(){
  const p=clamp(scrollY/maxScroll(),0,1);
  tcEl.textContent=tc(p*TOTAL);

@@ -284,6 +284,8 @@ html.js .reveal.is-visible{opacity:1;transform:none}
  .tl-tc{display:none}
  .tl-body{padding:7px 8px}
  .tl-clip{padding:0 5px;font-size:10.5px}
+ /* en móvil no caben seis nombres: el clip de la sección actual se ensancha y lleva el suyo */
+ .tl-clip.is-on{flex-grow:3.5!important;padding:0 8px}
  .reel-wrap{margin:0 auto 32px;width:min(78%,calc((100svh - var(--bar) - var(--tl) - 60px) * 9 / 16))}
  .col-export{margin-top:40px}
  .services li{grid-template-columns:1fr;row-gap:6px}
@@ -317,3 +319,4 @@ html.js .reveal.is-visible{opacity:1;transform:none}
 @media (max-width:560px){.thumbs-6{grid-template-columns:repeat(2,minmax(0,1fr))}.thumb-name{font-size:14px}}
 @media (prefers-reduced-motion:reduce){.web-screen:hover .web-shot.is-on{transition:none}.thumb-img img{transition:none}}
 @media (max-width:560px){.screen-btn{height:46px;padding:0 18px;font-size:14px}}
+@media (max-width:960px) and (prefers-reduced-motion:no-preference){.tl-clip{transition:flex-grow .3s ease,background .3s}}
