@@ -36,6 +36,7 @@ const translations={
   "legal.p3":"Si me escribes por email, uso tus datos solo para responderte. Puedes pedirme que los borre cuando quieras escribiendo a la misma dirección.",
   "legal.p4":"Los proyectos que aparecen pertenecen a sus clientes y se muestran como ejemplo de trabajo.",
   "misc.close":"Cerrar",
+  "misc.skip":"Saltar al contenido","nav.sections":"Secciones","alt.page":"Página de {name}","video.concierto.credit":"Zeta y Verdoy",
   "cursor.play":"Reproducir","cursor.web":"Cortar y abrir web","cursor.clip":"Cortar a este clip","cursor.yt":"Abrir en YouTube","cursor.cam":"Cortar a esta cámara","cursor.ig":"Abrir en Instagram","cursor.canal":"Ir al canal","cursor.export":"Exportar",
   "meta.title":"Kevin Almeida, portfolio","meta.description":"Kevin Almeida, desarrollo web, producción audiovisual y creación de contenido en Castellón.",
   "meta.ogDescription":"Desarrollo web, producción audiovisual y creación de contenido. Proyectos reales de principio a fin."
@@ -47,7 +48,7 @@ const translations={
   "nav.web":"Websites","nav.video":"Music videos","nav.social":"Content","nav.canales":"Channels","nav.contacto":"Contact",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hi, I'm Kevin.","hero.h1_line2":"I create, build and edit.",
   "hero.intro":"I build websites for businesses and make videos and reels for artists and brands, from ads to music videos. I handle every project from start to finish.",
-  "hero.write":"Write to me",
+  "hero.write":"Get in touch",
   "bin.title":"Project","bin.webs":"Websites","bin.video":"Music videos","bin.reels":"Reels","bin.canales":"Channels",
   "monitor.program":"Program","monitor.pause":"Pause","monitor.resume":"Play",
   "seq.retrato":"Portrait","seq.concierto":"Concert",
@@ -77,6 +78,7 @@ const translations={
   "legal.p3":"If you email me, I only use your details to reply. You can ask me to delete them at any time by writing to the same address.",
   "legal.p4":"The projects shown belong to their clients and are displayed as work samples.",
   "misc.close":"Close",
+  "misc.skip":"Skip to content","nav.sections":"Sections","alt.page":"{name} website","video.concierto.credit":"Zeta and Verdoy",
   "cursor.play":"Play","cursor.web":"Cut and open site","cursor.clip":"Cut to this clip","cursor.yt":"Open on YouTube","cursor.cam":"Cut to this camera","cursor.ig":"Open on Instagram","cursor.canal":"Go to channel","cursor.export":"Export",
   "meta.title":"Kevin Almeida, portfolio","meta.description":"Kevin Almeida, web development, video production and content creation in Castellón.",
   "meta.ogDescription":"Web development, video production and content creation. Real projects from start to finish."
@@ -94,7 +96,7 @@ const translations={
   "seq.retrato":"Portrait","seq.concierto":"Concert",
   "web.label":"Piste vidéo 1","web.h2":"Sites web","web.desc":"Développement sur mesure, optimisation et projets qui fonctionnent.",
   "web.clip":"Clip","web.cta":"Voir le site ↗",
-  "web.sampayo.desc":"Développement sur mesure avec SEO, GEO et AEO","web.cultiva.desc":"Optimisation du site et de la boutique en ligne","web.demo.desc":"Démo fonctionnelle développée de zéro",
+  "web.sampayo.desc":"Développement sur mesure avec SEO, GEO et AEO","web.cultiva.desc":"Optimisation du site et de la boutique en ligne","web.demo.desc":"Démo fonctionnelle développée à partir de zéro",
   "video.label":"Piste vidéo 2","video.h2":"Clips","video.desc":"Plus de 10 clips. Tournage, montage, étalonnage et postproduction.",
   "video.source":"Source","video.local":"Production propre","video.play":"Lecture","video.yt":"Voir sur YouTube ↗",
   "video.retrato.title":"Portrait","video.concierto.title":"Récap du concert",
@@ -103,7 +105,7 @@ const translations={
   "social.ig":"Voir le reel sur Instagram ↗","social.full":"Voir le clip complet",
   "canales.label":"Pistes audio","canales.h2":"Chaînes","canales.desc":"Chaînes de test, créées pour montrer mes compétences en montage et en gestion de contenu.",
   "canales.ig.tag":"Compte de test","canales.ig.desc":"Shorts pour un podcast, montés avec un logiciel et sans IA","canales.ig.cta":"Voir le profil ↗",
-  "canales.yt.tag":"Chaîne de test","canales.yt.desc":"Contenu généré à 100% par IA","canales.yt.cta":"Voir la chaîne ↗",
+  "canales.yt.tag":"Chaîne de test","canales.yt.desc":"Contenu généré à 100 % par l'IA","canales.yt.cta":"Voir la chaîne ↗",
   "services.label":"Effets appliqués","services.h2":"Ce que je fais","services.panel":"Effets","services.controls":"Options d'effet",
   "svc1.title":"Développement web","svc1.items":"HTML|CSS|JavaScript|Claude|SEO|GEO|AEO",
   "svc2.title":"Production audiovisuelle","svc2.items":"Tournage|Montage|Étalonnage|Postproduction",
@@ -118,6 +120,7 @@ const translations={
   "legal.p3":"Si vous m'écrivez par email, j'utilise vos données uniquement pour vous répondre. Vous pouvez me demander de les supprimer à tout moment en écrivant à la même adresse.",
   "legal.p4":"Les projets présentés appartiennent à leurs clients et sont montrés comme exemples de travail.",
   "misc.close":"Fermer",
+  "misc.skip":"Aller au contenu","nav.sections":"Sections","alt.page":"Site de {name}","video.concierto.credit":"Zeta et Verdoy",
   "cursor.play":"Lecture","cursor.web":"Couper et ouvrir le site","cursor.clip":"Couper sur ce clip","cursor.yt":"Ouvrir sur YouTube","cursor.cam":"Couper sur cette caméra","cursor.ig":"Ouvrir sur Instagram","cursor.canal":"Voir la chaîne","cursor.export":"Exporter",
   "meta.title":"Kevin Almeida, portfolio","meta.description":"Kevin Almeida, développement web, production audiovisuelle et création de contenu à Castellón.",
   "meta.ogDescription":"Développement web, production audiovisuelle et création de contenu. Des projets réels du début à la fin."
@@ -159,14 +162,15 @@ const translations={
   "legal.p3":"Si m'escrius per email, faig servir les teues dades només per respondre't. Pots demanar-me que les esborre quan vulgues escrivint a la mateixa adreça.",
   "legal.p4":"Els projectes que apareixen pertanyen als seus clients i es mostren com a exemple de treball.",
   "misc.close":"Tancar",
+  "misc.skip":"Salta al contingut","nav.sections":"Seccions","alt.page":"Pàgina de {name}","video.concierto.credit":"Zeta i Verdoy",
   "cursor.play":"Reproduir","cursor.web":"Tallar i obrir web","cursor.clip":"Tallar a aquest clip","cursor.yt":"Obrir a YouTube","cursor.cam":"Tallar a aquesta càmera","cursor.ig":"Obrir a Instagram","cursor.canal":"Anar al canal","cursor.export":"Exportar",
   "meta.title":"Kevin Almeida, portfolio","meta.description":"Kevin Almeida, desenvolupament web, producció audiovisual i creació de contingut a Castelló.",
   "meta.ogDescription":"Desenvolupament web, producció audiovisual i creació de contingut. Projectes reals de principi a fi."
  },
  de:{
-  "monitor.soundOn":"Ton einschalten","monitor.soundOff":"Stumm","web.hint":"Zum Durchscrollen mit der Maus darüberfahren","video.playSound":"Mit Ton abspielen","social.sound":"Ganz mit Ton ansehen","cursor.pick":"Im Monitor zeigen","cursor.sound":"Mit Ton",
+  "monitor.soundOn":"Ton einschalten","monitor.soundOff":"Stumm","web.hint":"Zum Durchscrollen mit der Maus darüberfahren","video.playSound":"Mit Ton abspielen","social.sound":"Komplett mit Ton ansehen","cursor.pick":"Im Monitor zeigen","cursor.sound":"Mit Ton",
   "nav.inicio":"Start","nav.servicios":"Leistungen","hero.play":"Arbeiten ansehen","social.stat":"+300 Follower","social.statSub":"in etwa 6 Wochen","social.pick":"Kamera wählen","canales.title":"Testkanäle","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO und AEO","svc2.tools":"Dreh, Schnitt, Color Grading und Postproduktion","svc3.tools":"Reels, Thumbnails, Logos und Posts","svc4.tools":"Strategie, Veröffentlichung und Optimierung",
-  "intro.skip":"Klicken zum Überspringen",
+  "intro.skip":"Zum Überspringen klicken",
   "nav.web":"Websites","nav.video":"Musikvideos","nav.social":"Content","nav.canales":"Kanäle","nav.contacto":"Kontakt",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hallo, ich bin Kevin.","hero.h1_line2":"Ich gestalte, entwickle und schneide.",
   "hero.intro":"Ich baue Websites für Unternehmen und mache Videos und Reels für Künstler und Marken, von Werbung bis Musikvideo. Ich betreue jedes Projekt von Anfang bis Ende.",
@@ -174,7 +178,7 @@ const translations={
   "bin.title":"Projekt","bin.webs":"Websites","bin.video":"Musikvideos","bin.reels":"Reels","bin.canales":"Kanäle",
   "monitor.program":"Programm","monitor.pause":"Pause","monitor.resume":"Abspielen",
   "seq.retrato":"Porträt","seq.concierto":"Konzert",
-  "web.label":"Videospur 1","web.h2":"Websites","web.desc":"Von Grund auf entwickelt, optimiert und gemacht, um zu funktionieren.",
+  "web.label":"Videospur 1","web.h2":"Websites","web.desc":"Entwicklung von Grund auf, Optimierung und Projekte, die funktionieren.",
   "web.clip":"Clip","web.cta":"Website besuchen ↗",
   "web.sampayo.desc":"Von Grund auf entwickelt, mit SEO, GEO und AEO","web.cultiva.desc":"Optimierung von Website und Onlineshop","web.demo.desc":"Funktionsfähige Demo, von Grund auf entwickelt",
   "video.label":"Videospur 2","video.h2":"Musikvideos","video.desc":"Mehr als 10 Musikvideos. Dreh, Schnitt, Color Grading und Postproduktion.",
@@ -200,6 +204,7 @@ const translations={
   "legal.p3":"Wenn du mir eine E-Mail schreibst, nutze ich deine Daten nur für die Antwort. Du kannst jederzeit die Löschung verlangen, indem du an dieselbe Adresse schreibst.",
   "legal.p4":"Die gezeigten Projekte gehören ihren Kunden und dienen als Arbeitsbeispiele.",
   "misc.close":"Schließen",
+  "misc.skip":"Zum Inhalt springen","nav.sections":"Bereiche","alt.page":"Website von {name}","video.concierto.credit":"Zeta und Verdoy",
   "cursor.play":"Abspielen","cursor.web":"Schneiden und Website öffnen","cursor.clip":"Auf diesen Clip schneiden","cursor.yt":"Auf YouTube öffnen","cursor.cam":"Auf diese Kamera schneiden","cursor.ig":"Auf Instagram öffnen","cursor.canal":"Zum Kanal","cursor.export":"Exportieren",
   "meta.title":"Kevin Almeida, Portfolio","meta.description":"Kevin Almeida, Webentwicklung, Videoproduktion und Content-Erstellung in Castellón.",
   "meta.ogDescription":"Webentwicklung, Videoproduktion und Content-Erstellung. Echte Projekte von Anfang bis Ende."
@@ -230,6 +235,10 @@ function applyLanguage(lang){
  document.querySelectorAll("[data-i18n]").forEach(el=>{
   const value=dict[el.dataset.i18n];
   if(value!==undefined)el.textContent=value;
+ });
+
+ document.querySelectorAll("[data-i18n-alt]").forEach(el=>{
+  if(dict["alt.page"])el.alt=dict["alt.page"].replace("{name}",el.dataset.i18nAlt);
  });
 
  document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
