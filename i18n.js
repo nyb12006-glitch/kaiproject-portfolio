@@ -1,7 +1,7 @@
 const translations={
  es:{
   "monitor.soundOn":"Activar sonido","monitor.soundOff":"Silenciar","web.hint":"Pasa el ratón para recorrerla","video.playSound":"Reproducir con sonido","social.sound":"Ver completo con sonido","cursor.pick":"Ver en el monitor","cursor.sound":"Con sonido",
-  "nav.inicio":"Inicio","nav.servicios":"Servicios","hero.play":"Ver trabajos","social.stat":"+300 seguidores","social.statSub":"en unas 6 semanas","social.pick":"Elige una cámara","canales.title":"Canales de prueba","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO y AEO","svc2.tools":"Grabación, edición, color y postproducción","svc3.tools":"Reels, miniaturas, logos y posts","svc4.tools":"Estrategia, publicación y optimización",
+  "nav.inicio":"Inicio","nav.servicios":"Servicios","hero.play":"Ver trabajos","social.stat":"+300 seguidores","social.statSub":"en unas 6 semanas","social.pick":"Elige una cámara","canales.title":"Canales","social.views15":"1,5 millones de visualizaciones","social.views11":"Más de 1 millón de visualizaciones","canales.flop.desc":"Reels de humor animados en 3D, dos de ellos con más de un millón de visualizaciones","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO y AEO","svc2.tools":"Grabación, edición, color y postproducción","svc3.tools":"Reels, miniaturas, logos y posts","svc4.tools":"Estrategia, publicación y optimización",
   "intro.skip":"Pulsa para saltar",
   "nav.web":"Webs","nav.video":"Videoclips","nav.social":"Contenido","nav.canales":"Canales","nav.contacto":"Contacto",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hola, soy Kevin.","hero.h1_line2":"Creo, desarrollo y edito.",
@@ -43,7 +43,7 @@ const translations={
  },
  en:{
   "monitor.soundOn":"Turn sound on","monitor.soundOff":"Mute","web.hint":"Hover to scroll through it","video.playSound":"Play with sound","social.sound":"Watch in full with sound","cursor.pick":"Show in monitor","cursor.sound":"With sound",
-  "nav.inicio":"Home","nav.servicios":"Services","hero.play":"See my work","social.stat":"+300 followers","social.statSub":"in about 6 weeks","social.pick":"Pick a camera","canales.title":"Test channels","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO and AEO","svc2.tools":"Filming, editing, color and post-production","svc3.tools":"Reels, thumbnails, logos and posts","svc4.tools":"Strategy, publishing and optimization",
+  "nav.inicio":"Home","nav.servicios":"Services","hero.play":"See my work","social.stat":"+300 followers","social.statSub":"in about 6 weeks","social.pick":"Pick a camera","canales.title":"Channels","social.views15":"1.5 million views","social.views11":"Over 1 million views","canales.flop.desc":"Animated 3D comedy reels, two of them with over a million views","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO and AEO","svc2.tools":"Filming, editing, color and post-production","svc3.tools":"Reels, thumbnails, logos and posts","svc4.tools":"Strategy, publishing and optimization",
   "intro.skip":"Click to skip",
   "nav.web":"Websites","nav.video":"Music videos","nav.social":"Content","nav.canales":"Channels","nav.contacto":"Contact",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hi, I'm Kevin.","hero.h1_line2":"I create, build and edit.",
@@ -85,7 +85,7 @@ const translations={
  },
  fr:{
   "monitor.soundOn":"Activer le son","monitor.soundOff":"Couper le son","web.hint":"Survolez pour la parcourir","video.playSound":"Lire avec le son","social.sound":"Voir en entier avec le son","cursor.pick":"Voir sur le moniteur","cursor.sound":"Avec le son",
-  "nav.inicio":"Accueil","nav.servicios":"Services","hero.play":"Voir mon travail","social.stat":"+300 abonnés","social.statSub":"en environ 6 semaines","social.pick":"Choisissez une caméra","canales.title":"Chaînes de test","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO et AEO","svc2.tools":"Tournage, montage, étalonnage et postproduction","svc3.tools":"Reels, miniatures, logos et posts","svc4.tools":"Stratégie, publication et optimisation",
+  "nav.inicio":"Accueil","nav.servicios":"Services","hero.play":"Voir mon travail","social.stat":"+300 abonnés","social.statSub":"en environ 6 semaines","social.pick":"Choisissez une caméra","canales.title":"Chaînes","social.views15":"1,5 million de vues","social.views11":"Plus d'1 million de vues","canales.flop.desc":"Reels d'humour animés en 3D, dont deux à plus d'un million de vues","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO et AEO","svc2.tools":"Tournage, montage, étalonnage et postproduction","svc3.tools":"Reels, miniatures, logos et posts","svc4.tools":"Stratégie, publication et optimisation",
   "intro.skip":"Cliquez pour passer",
   "nav.web":"Sites web","nav.video":"Clips","nav.social":"Contenu","nav.canales":"Chaînes","nav.contacto":"Contact",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Bonjour, je suis Kevin.","hero.h1_line2":"Je crée, développe et monte.",
@@ -127,7 +127,7 @@ const translations={
  },
  ca:{
   "monitor.soundOn":"Activar el so","monitor.soundOff":"Silenciar","web.hint":"Passa el ratolí per recórrer-la","video.playSound":"Reproduir amb so","social.sound":"Veure sencer amb so","cursor.pick":"Veure al monitor","cursor.sound":"Amb so",
-  "nav.inicio":"Inici","nav.servicios":"Serveis","hero.play":"Veure treballs","social.stat":"+300 seguidors","social.statSub":"en unes 6 setmanes","social.pick":"Tria una càmera","canales.title":"Canals de prova","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO i AEO","svc2.tools":"Gravació, edició, color i postproducció","svc3.tools":"Reels, miniatures, logos i posts","svc4.tools":"Estratègia, publicació i optimització",
+  "nav.inicio":"Inici","nav.servicios":"Serveis","hero.play":"Veure treballs","social.stat":"+300 seguidors","social.statSub":"en unes 6 setmanes","social.pick":"Tria una càmera","canales.title":"Canals","social.views15":"1,5 milions de visualitzacions","social.views11":"Més d'1 milió de visualitzacions","canales.flop.desc":"Reels d'humor animats en 3D, dos d'ells amb més d'un milió de visualitzacions","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO i AEO","svc2.tools":"Gravació, edició, color i postproducció","svc3.tools":"Reels, miniatures, logos i posts","svc4.tools":"Estratègia, publicació i optimització",
   "intro.skip":"Prem per saltar",
   "nav.web":"Webs","nav.video":"Videoclips","nav.social":"Contingut","nav.canales":"Canals","nav.contacto":"Contacte",
   "hero.eyebrow":"Kevin Almeida, Castelló","hero.h1_line1":"Hola, soc Kevin.","hero.h1_line2":"Creo, desenvolupe i edite.",
@@ -169,7 +169,7 @@ const translations={
  },
  de:{
   "monitor.soundOn":"Ton einschalten","monitor.soundOff":"Stumm","web.hint":"Zum Durchscrollen mit der Maus darüberfahren","video.playSound":"Mit Ton abspielen","social.sound":"Komplett mit Ton ansehen","cursor.pick":"Im Monitor zeigen","cursor.sound":"Mit Ton",
-  "nav.inicio":"Start","nav.servicios":"Leistungen","hero.play":"Arbeiten ansehen","social.stat":"+300 Follower","social.statSub":"in etwa 6 Wochen","social.pick":"Kamera wählen","canales.title":"Testkanäle","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO und AEO","svc2.tools":"Dreh, Schnitt, Color Grading und Postproduktion","svc3.tools":"Reels, Thumbnails, Logos und Posts","svc4.tools":"Strategie, Veröffentlichung und Optimierung",
+  "nav.inicio":"Start","nav.servicios":"Leistungen","hero.play":"Arbeiten ansehen","social.stat":"+300 Follower","social.statSub":"in etwa 6 Wochen","social.pick":"Kamera wählen","canales.title":"Kanäle","social.views15":"1,5 Millionen Aufrufe","social.views11":"Über 1 Million Aufrufe","canales.flop.desc":"Animierte 3D-Comedy-Reels, zwei davon mit über einer Million Aufrufen","svc1.tools":"HTML, CSS, JavaScript, Claude, SEO, GEO und AEO","svc2.tools":"Dreh, Schnitt, Color Grading und Postproduktion","svc3.tools":"Reels, Thumbnails, Logos und Posts","svc4.tools":"Strategie, Veröffentlichung und Optimierung",
   "intro.skip":"Zum Überspringen klicken",
   "nav.web":"Websites","nav.video":"Musikvideos","nav.social":"Content","nav.canales":"Kanäle","nav.contacto":"Kontakt",
   "hero.eyebrow":"Kevin Almeida, Castellón","hero.h1_line1":"Hallo, ich bin Kevin.","hero.h1_line2":"Ich gestalte, entwickle und schneide.",

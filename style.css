@@ -178,7 +178,10 @@ html:not(.js) .render::after{display:none}
 .stat{display:flex;flex-direction:column;gap:2px;margin:0 0 clamp(28px,5vh,48px)}
 .stat strong{font-family:var(--display);font-weight:400;font-size:clamp(40px,4.6vw,72px);line-height:1;color:var(--accent);text-shadow:0 0 30px color-mix(in srgb,var(--accent) 45%,transparent)}
 .stat span{font-size:17px;color:var(--muted)}
-.angles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;max-width:560px;margin-bottom:20px}
+.angles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;max-width:470px;margin-bottom:16px}
+.reel-by{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:0 0 20px;min-height:1.5em}
+.reel-by .mono{font-size:13px;color:var(--muted)}
+.reel-by strong{font-size:15px;color:var(--accent)}
 .angle{position:relative;padding:0;aspect-ratio:9/16;border:0;border-radius:6px;overflow:hidden;background:#000;cursor:pointer}
 .angle img{width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .25s,transform .4s}
 .angle:hover img{opacity:.9}

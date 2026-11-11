@@ -165,7 +165,7 @@ if(srcScreen){
 }
 
 /* ---------- 03 contenido: multicámara con versión completa y sonido ---------- */
-const mcVideo=$("mcVideo"),mcScreen=$("mcScreen"),mcLink=$("mcLink"),mcSound=$("mcSound"),mcAmb=$("mcAmb");
+const mcVideo=$("mcVideo"),mcScreen=$("mcScreen"),mcLink=$("mcLink"),mcSound=$("mcSound"),mcAmb=$("mcAmb"),mcBy=$("mcBy"),mcHandle=$("mcHandle"),mcViews=$("mcViews");
 const angles=[...document.querySelectorAll(".angle")];
 let mcVisible=false;
 // vista previa: bucle corto sin sonido; completo: el reel entero con sonido y controles
@@ -177,6 +177,10 @@ function setAngle(a,cut){
  if(mcVisible&&!reduced)mcVideo.play().catch(()=>{});
  mcLink.hidden=!a.dataset.href;if(a.dataset.href)mcLink.href=a.dataset.href;
  mcSound.hidden=!a.dataset.full;
+ mcHandle.textContent=a.dataset.by||"";mcHandle.hidden=!a.dataset.by;
+ mcViews.hidden=!a.dataset.views;
+ if(a.dataset.views){mcViews.dataset.i18n="social.views"+a.dataset.views;mcViews.textContent=t(mcViews.dataset.i18n);}
+ mcBy.hidden=!a.dataset.by&&!a.dataset.views;
  if(cut&&!reduced){mcScreen.classList.remove("is-cutting");void mcScreen.offsetWidth;mcScreen.classList.add("is-cutting");}
 }
 if(mcVideo){
