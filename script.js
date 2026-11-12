@@ -170,6 +170,13 @@ const angles=[...document.querySelectorAll(".angle")];
 let mcVisible=false;
 // vista previa: bucle corto sin sonido; completo: el reel entero con sonido y controles
 function previewMode(){mcVideo.controls=false;mcVideo.muted=true;mcVideo.loop=true;}
+// 15 y 11 = millones (frase propia); el resto, "más de N" con el número en el formato del idioma
+function showViews(v){
+ if(v==="15"||v==="11"){mcViews.dataset.i18n="social.views"+v;mcViews.textContent=t(mcViews.dataset.i18n);return;}
+ delete mcViews.dataset.i18n;
+ mcViews.textContent=t("social.viewsMore").replace("{n}",Number(v).toLocaleString(document.documentElement.lang));
+}
+document.addEventListener("langchange",()=>{const a=angles.find(x=>x.classList.contains("is-on"));if(a&&a.dataset.views)showViews(a.dataset.views);});
 function setAngle(a,cut){
  angles.forEach(x=>x.classList.toggle("is-on",x===a));
  previewMode();
@@ -179,7 +186,7 @@ function setAngle(a,cut){
  mcSound.hidden=!a.dataset.full;
  mcHandle.textContent=a.dataset.by||"";mcHandle.hidden=!a.dataset.by;
  mcViews.hidden=!a.dataset.views;
- if(a.dataset.views){mcViews.dataset.i18n="social.views"+a.dataset.views;mcViews.textContent=t(mcViews.dataset.i18n);}
+ if(a.dataset.views)showViews(a.dataset.views);
  mcBy.hidden=!a.dataset.by&&!a.dataset.views;
  if(cut&&!reduced){mcScreen.classList.remove("is-cutting");void mcScreen.offsetWidth;mcScreen.classList.add("is-cutting");}
 }
