@@ -211,6 +211,15 @@ const translations={
  }
 };
 
+
+// Banderas dibujadas en SVG (los emojis de bandera no salen en Windows y la catalana no existe)
+const FLAGS={
+ es:'<svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#c60b1e"/><rect y=".5" width="3" height="1" fill="#ffc400"/></svg>',
+ en:'<svg viewBox="0 0 60 30"><clipPath id="fgT"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#fgT)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>',
+ fr:'<svg viewBox="0 0 3 2"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ed2939"/></svg>',
+ ca:'<svg viewBox="0 0 9 6"><rect width="9" height="6" fill="#fcdd09"/><path d="M0 1h9M0 2.33h9M0 3.67h9M0 5h9" stroke="#da121a" stroke-width=".667"/></svg>',
+ de:'<svg viewBox="0 0 5 3"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#dd0000"/><rect y="2" width="5" height="1" fill="#ffce00"/></svg>'
+};
 const SUPPORTED_LANGS=["es","en","fr","ca","de"];
 const LANG_STORAGE_KEY="portfolio-lang";
 let currentDict=translations.es;
@@ -260,6 +269,8 @@ function applyLanguage(lang){
 
  const langSwitch=document.getElementById("langSwitch");
  if(langSwitch)langSwitch.value=lang;
+ const langFlag=document.getElementById("langFlag");
+ if(langFlag)langFlag.innerHTML=FLAGS[lang]||FLAGS.es;
 
  try{localStorage.setItem(LANG_STORAGE_KEY,lang);}catch(e){}
  document.dispatchEvent(new CustomEvent("langchange",{detail:{lang}}));
